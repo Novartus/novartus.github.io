@@ -17,6 +17,10 @@
   <meta property="og:url" content="https://novartus.github.io">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@novartus">
+  <link rel="canonical" href="https://novartus.github.io">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a192f">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- JSON-LD Structured Data -->
@@ -28,6 +32,15 @@
       "alternateName": "Novartus",
       "url": "https://novartus.github.io",
       "jobTitle": "Senior Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Royal Bank of Canada"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Windsor"
+      },
+      "knowsAbout": ["JavaScript", "React", "Node.js", "Java", "Spring Boot", "TypeScript", "Next.js", "AWS", "OCP", "Docker", "Kubernetes", "GenAI", "MySQL", "MongoDB"],
       "sameAs": [
         "https://github.com/novartus",
         "https://linkedin.com/in/hudaniabhee"
@@ -51,7 +64,7 @@
         <li><a href="#projects">04. Projects</a></li>
         <li><a href="#contact" class="btn-primary">Connect</a></li>
       </ul>
-      <div class="hamburger">
+      <div class="hamburger" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">
         <span></span>
         <span></span>
         <span></span>
@@ -71,7 +84,8 @@
             <a href="#contact" class="btn-secondary">Contact Me</a>
           </div>
           <div class="hero-social-group">
-            <a href="https://linkedin.com/in/hudaniabhee" target="_blank" class="btn-secondary social-btn">
+            <a href="https://linkedin.com/in/hudaniabhee" target="_blank" class="btn-secondary social-btn"
+              aria-label="LinkedIn Profile">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -79,7 +93,8 @@
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </a>
-            <a href="https://github.com/novartus" target="_blank" class="btn-secondary social-btn">
+            <a href="https://github.com/novartus" target="_blank" class="btn-secondary social-btn"
+              aria-label="GitHub Profile">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path
@@ -119,6 +134,7 @@
           <div class="skill-category">
             <h3>Frontend Architecture</h3>
             <div class="skill-tags">
+              <span>JavaScript</span>
               <span>React</span>
               <span>TypeScript</span>
               <span>Next.js</span>
@@ -130,8 +146,13 @@
             <h3>Backend Systems</h3>
             <div class="skill-tags">
               <span>Node.js</span>
+              <span>Java</span>
+              <span>Spring Boot</span>
               <span>Python</span>
-              <span>Go</span>
+              <span>Flask</span>
+              <span>MySQL</span>
+              <span>MSSQL</span>
+              <span>MongoDB</span>
               <span>PostgreSQL</span>
               <span>Redis</span>
               <span>GraphQL</span>
@@ -142,7 +163,9 @@
             <div class="skill-tags">
               <span>Docker</span>
               <span>Kubernetes</span>
+              <span>OCP (OpenShift)</span>
               <span>AWS</span>
+              <span>Azure</span>
               <span>Terraform</span>
               <span>CI/CD Pipelines</span>
             </div>
