@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://novartus.github.io/sitemap.xml
