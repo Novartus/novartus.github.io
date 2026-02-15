@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
         expElement.textContent = `${expYears}+`;
     }
 
+    // Dynamic Copyright Year
+    const copyrightYearElement = document.getElementById('copyright-year');
+    if (copyrightYearElement) {
+        copyrightYearElement.textContent = currentYear;
+    }
+
     // Sticky Navbar
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
@@ -100,4 +106,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+    // Theme Switcher Logic
+    const themeToggle = document.querySelector('.theme-toggle');
+    const htmlElement = document.documentElement;
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+    // Check for saved theme preference, otherwise default to light
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Explicitly check for 'dark' to enable dark mode, otherwise default to light
+    // If no saved theme, we can optionally check system preference, 
+    // but requirement is "make light theme as default theme", so we prioritize light unless explicitly set to dark.
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+        if (metaThemeColor) metaThemeColor.setAttribute('content', '#050505');
+    } else {
+        htmlElement.setAttribute('data-theme', 'light');
+        if (metaThemeColor) metaThemeColor.setAttribute('content', '#ffffff');
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            // Update meta theme color for mobile browsers
+            if (metaThemeColor) {
+                metaThemeColor.setAttribute('content', newTheme === 'dark' ? '#050505' : '#ffffff');
+            }
+        });
+    }
 });
