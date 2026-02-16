@@ -1,0 +1,20 @@
+{
+  "name": "Abhee Hudani | Senior Full Stack Developer",
+  "short_name": "Abhee Hudani",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#0a192f",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "static/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "static/og.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}
