@@ -15,17 +15,18 @@
     content="Senior Full Stack Developer specializing in scalable web applications and modern UI/UX. View my portfolio.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://novartus.github.io">
+  <meta property="og:image" content="static/og.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@novartus">
   <link rel="canonical" href="https://novartus.github.io">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0a192f">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-    {
+    [{
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Abhee Hudani",
@@ -45,11 +46,22 @@
         "https://github.com/novartus",
         "https://linkedin.com/in/hudaniabhee"
       ]
-    }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Abhee Hudani | Senior Full Stack Developer",
+      "url": "https://novartus.github.io",
+      "author": {
+        "@type": "Person",
+        "name": "Abhee Hudani"
+      }
+    }]
     </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
 
@@ -97,9 +109,9 @@
   <main>
     <section id="hero" class="hero">
       <div class="container hero-content">
-        <span class="eyebrow">Hi, my name is Abhee Hudani</span>
-        <h1>Senior Full Stack <br> Developer.</h1>
-        <p>Architecting robust digital ecosystems; engineered for performance, fueled by coffee.</p>
+        <h1 class="eyebrow">Abhee Hudani</h1>
+        <h2 class="hero-title">Senior Full Stack <br> Developer.</h2>
+        <p>Architecting scalable enterprise solutions and leading high performance engineering teams.</p>
         <div class="hero-actions">
           <div class="hero-cta-group">
             <a href="#projects" class="btn-primary">View My Work</a>
@@ -135,14 +147,11 @@
             style="color: var(--accent-color); font-size: 0.6em; margin-right: 15px;">01.</span> About Me</h2>
         <div class="about-grid">
           <div class="about-text">
-            <p>Ever since I was young, my curiosity and passion for technology have driven me to explore how things
-              work. What started as tinkering has evolved into a career building enterprise-grade solutions. With <span
-                id="exp-years">4+</span> years of experience, I specialize in architecting scalable, secure, and
-              user-centric web applications.</p>
-            <p>Currently, as a Senior Full Stack Developer at RBC, I lead the technical direction of next-gen banking
-              platforms. My role blends architectural strategy with hands-on coding, DevOps automation, and ensuring
-              strict accessibility & security compliance. Beyond the code, I am a passionate <strong>GenAI
-                Advocate</strong> and mentor, dedicated to fostering innovation and excellence within my team.</p>
+            <p>I am a Senior Full Stack Developer with over <span id="exp-years" class="highlight"></span> years of
+              experience bridging the gap between high-level architectural strategy and hands-on execution. Currently
+              driving technical direction at RBC, my expertise spans the entire development lifecycle from engineering
+              scalable enterprise platforms and CI/CD pipelines, to advocating for GenAI adoption and mentoring the next
+              generation of engineers.</p>
           </div>
         </div>
       </div>
@@ -152,44 +161,48 @@
       <div class="container">
         <h2 class="section-title"><span
             style="color: var(--accent-color); font-size: 0.6em; margin-right: 15px;">02.</span> Technical Arsenal</h2>
-        <div class="skills-grid">
+        <div class="skills-grid bento-grid">
           <div class="skill-category">
             <h3>Frontend Architecture</h3>
             <div class="skill-tags">
               <span>JavaScript</span>
-              <span>React</span>
               <span>TypeScript</span>
+              <span>React</span>
               <span>Next.js</span>
               <span>Tailwind CSS</span>
               <span>Framer Motion</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>Backend Systems</h3>
+            <h3>DevOps & Cloud</h3>
             <div class="skill-tags">
-              <span>Node.js</span>
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>Python</span>
-              <span>Flask</span>
-              <span>MySQL</span>
-              <span>MSSQL</span>
-              <span>MongoDB</span>
-              <span>PostgreSQL</span>
-              <span>Redis</span>
-              <span>GraphQL</span>
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>OpenShift (OCP)</span>
+              <span>GitHub Actions</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>DevOps & Cloud</h3>
+            <h3>Backend Systems</h3>
             <div class="skill-tags">
-              <span>Docker</span>
-              <span>Kubernetes</span>
-              <span>OCP (OpenShift)</span>
-              <span>AWS</span>
-              <span>Azure</span>
-              <span>Terraform</span>
-              <span>CI/CD Pipelines</span>
+              <span>Node.js</span>
+              <span>Java / Spring Boot</span>
+              <span>Python / Flask</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>Redis</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Security, Testing & GenAI</h3>
+            <div class="skill-tags">
+              <span>GenAI Architecture</span>
+              <span>Prompt Engineering</span>
+              <span>SonarQube</span>
+              <span>DAST/SAST/SYNK</span>
+              <span>OWASP</span>
+              <span>Jest / Cypress</span>
             </div>
           </div>
         </div>
@@ -207,15 +220,19 @@
               <h3>Senior Full Stack Developer</h3>
               <span class="company">Royal Bank of Canada (RBC)</span>
               <ul>
-                <li><strong>Architecture & Development:</strong> Combine architectural leadership with hands-on
-                  development of complex features, ensuring scalability and migration success across enterprise
-                  projects.</li>
-                <li><strong>DevOps & Security:</strong> Manage CI/CD pipelines (GitHub Actions) and enforce security
-                  standards via DAST/SAST scanning and strict access policy management.</li>
-                <li><strong>Quality & Compliance:</strong> Enforce strict code compliance via SonarQube and
-                  comprehensive test cases, serving as application custodian and mentoring the team.</li>
-                <li><strong>Innovation & GenAI:</strong> Act as a <strong>GenAI Advocate</strong>, promoting the
-                  integration of artificial intelligence and modern technologies into financial workflows.</li>
+                <li><strong>Leadership & Architecture:</strong> Drive technical direction and serve as application
+                  custodian. Lead a team of developers by managing project timelines, overseeing strategic planning, and
+                  combining architectural vision with hands-on development of complex enterprise features.</li>
+                <li><strong>Enterprise Engineering:</strong> Architect, develop, and maintain robust enterprise
+                  applications (including audit and TSS tracking/automation systems), ensuring long-term code stability,
+                  scalability, and successful project migrations.</li>
+                <li><strong>DevOps & Compliance:</strong> Manage CI/CD pipelines (GitHub Actions) and enforce rigorous
+                  security standards via DAST/SAST/SYNK scanning. Ensure strict code compliance via SonarQube,
+                  comprehensive testing, and Disaster Recovery readiness.</li>
+                <li><strong>Innovation & Community:</strong> Act as a <strong>GenAI Advocate</strong> within the
+                  Technology Infrastructure org to integrate artificial intelligence into enterprise workflows. Actively
+                  volunteer as a mentor for <strong>Women in Tech</strong> and teach coding fundamentals to students.
+                </li>
               </ul>
             </div>
           </div>
