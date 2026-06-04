@@ -484,69 +484,6 @@ ul { list-style: none; }
   box-shadow: var(--shadow-sm);
 }
 
-/* Projects Section */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2.5rem;
-}
-
-.project-card {
-  background: var(--card-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--accent-color);
-  box-shadow: var(--shadow-lg);
-  background: var(--card-hover);
-}
-
-.project-content {
-  padding: 2.5rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-  font-weight: 700;
-}
-
-.project-content p {
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  flex-grow: 1;
-  line-height: 1.6;
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.project-tags span {
-  color: var(--accent-color);
-  background: var(--accent-glow);
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
 /* Experience Timeline - Redesigned */
 .timeline {
   position: relative;
@@ -783,7 +720,7 @@ ul { list-style: none; }
     gap: 3rem;
   }
 
-  .skills-grid, .projects-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
