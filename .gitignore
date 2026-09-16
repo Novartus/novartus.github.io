@@ -140,3 +140,6 @@ vite.config.ts.timestamp-*
 
 # MacOS
 *.DS_Store
+
+# Backups
+static/og-orig.png
