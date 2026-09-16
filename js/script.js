@@ -29,6 +29,29 @@ document.addEventListener('DOMContentLoaded', () => {
   // Valid view mappings
   const validViews = ['view-about', 'view-skills', 'view-experience', 'view-projects', 'view-contact'];
 
+  const viewMeta = {
+    'view-about': {
+      title: 'Abhee Hudani | Senior Full Stack Developer & Cloud Architect',
+      desc: 'Senior Full Stack Developer at RBC specializing in TypeScript/JavaScript, Python & Java, building resilient architectures with React, NestJS, Node.js, and GenAI.'
+    },
+    'view-skills': {
+      title: 'Technical Arsenal & Skills | Abhee Hudani',
+      desc: 'Explore Abhee Hudani\'s technical expertise across JavaScript, TypeScript, Python, Java, React, NestJS, Node.js, Next.js, and Cloud Infrastructure.'
+    },
+    'view-experience': {
+      title: 'Career & Experience Timeline | Abhee Hudani',
+      desc: 'Professional journey and engineering milestones of Abhee Hudani at RBC, University of Windsor, and Solskyn Tech.'
+    },
+    'view-projects': {
+      title: 'Featured Projects & Architecture | Abhee Hudani',
+      desc: 'Showcase of flagship projects including Odin-Eye (Android Health Hub with on-device Gemini Nano AI) and KyberFlow Pro.'
+    },
+    'view-contact': {
+      title: 'Connect & Collaborate | Abhee Hudani',
+      desc: 'Get in touch with Abhee Hudani for architectural collaborations, technical inquiries, or professional networking.'
+    }
+  };
+
   function switchView(targetViewId, updateUrl = true) {
     if (!validViews.includes(targetViewId)) {
       targetViewId = 'view-about';
@@ -54,6 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
         panel.classList.remove('active');
       });
       targetPanel.classList.add('active');
+
+      // Update Page Title and Meta Description for SEO
+      if (viewMeta[targetViewId]) {
+        document.title = viewMeta[targetViewId].title;
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+          metaDesc.setAttribute('content', viewMeta[targetViewId].desc);
+        }
+      }
 
       // Scroll viewport back to top smoothly
       if (appViewport) {
