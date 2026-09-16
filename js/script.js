@@ -179,8 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. ODIN-EYE ARCHITECTURE MODAL CONTROLLER
   const odinDialog = document.getElementById('odineye-dialog');
   const openOdinBtns = [
-    document.getElementById('open-odineye-modal'),
-    document.getElementById('card-odineye')
+    document.getElementById('open-odineye-modal')
   ];
   const closeOdinBtn = document.getElementById('close-odineye-modal');
 
@@ -212,6 +211,45 @@ document.addEventListener('DOMContentLoaded', () => {
       );
       if (!isInDialog) {
         odinDialog.close();
+      }
+    });
+  }
+
+  // 5. HERMEX ARCHITECTURE MODAL CONTROLLER
+  const hermexDialog = document.getElementById('hermex-dialog');
+  const openHermexBtns = [
+    document.getElementById('open-hermex-modal')
+  ];
+  const closeHermexBtn = document.getElementById('close-hermex-modal');
+
+  if (hermexDialog) {
+    openHermexBtns.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          hermexDialog.showModal();
+        });
+      }
+    });
+
+    if (closeHermexBtn) {
+      closeHermexBtn.addEventListener('click', () => {
+        hermexDialog.close();
+      });
+    }
+
+    // Close when clicking on dialog backdrop
+    hermexDialog.addEventListener('click', (e) => {
+      const rect = hermexDialog.getBoundingClientRect();
+      const isInDialog = (
+        rect.top <= e.clientY &&
+        e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX &&
+        e.clientX <= rect.left + rect.width
+      );
+      if (!isInDialog) {
+        hermexDialog.close();
       }
     });
   }

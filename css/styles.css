@@ -554,10 +554,14 @@ html, body {
 }
 
 .vinyl-disc text {
-  font-size: 8.5px;
+  font-size: 7.2px;
   font-weight: 800;
-  letter-spacing: 2.2px;
+  letter-spacing: 1.45px;
   fill: #ffffff;
+}
+
+.rotating-vinyl-badge:hover .stamp-svg {
+  animation-duration: 6s;
 }
 
 .vinyl-center-hole {

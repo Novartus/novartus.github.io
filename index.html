@@ -196,6 +196,7 @@
             "item": {
               "@type": "SoftwareApplication",
               "name": "Odin-Eye",
+              "url": "https://odin-eye.netlify.app/",
               "operatingSystem": "Android",
               "applicationCategory": "HealthApplication",
               "description": "Centralized personal health hub for Android aggregating live biometrics from wearables and Health Connect with on-device Gemini Nano AI coaching.",
@@ -213,6 +214,20 @@
               "url": "https://kyberflow.netlify.app/",
               "applicationCategory": "ProductivityApplication",
               "description": "Collaborative task management tool for enterprise remote teams featuring real-time websocket updates, Redux state, and offline support.",
+              "author": {
+                "@id": "https://novartus.github.io/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "WebApplication",
+              "name": "Hermex",
+              "url": "https://hermex-terminal.netlify.app/",
+              "applicationCategory": "FinanceApplication",
+              "description": "Institutional-grade, zero-backend market analytics and high-frequency trading terminal running 100% client-side with real-time sub-100ms L2 limit order book matching, Kyle's Lambda slippage, and Web Worker quant simulations.",
               "author": {
                 "@id": "https://novartus.github.io/#person"
               }
@@ -402,7 +417,7 @@
                           fill="none" />
                         <text>
                           <textPath href="#vinylStampPath" startOffset="0%">
-                            • PERSONAL PORTFOLIO • ARCHITECT
+                            • BREW • ARCHITECT • DEVELOP • DEPLOY •
                           </textPath>
                         </text>
                       </svg>
@@ -483,7 +498,7 @@
                     </div>
                     <div class="client-text-block">
                       <h3 class="client-card-title">Enterprise Experience</h3>
-                      <p class="client-card-sub">RBC &bull; Uni. of Windsor</p>
+                      <p class="client-card-sub">RBC &bull; University of Windsor</p>
                     </div>
                   </button>
 
@@ -992,9 +1007,9 @@
               <article class="project-bento-card project-card-featured" id="card-odineye">
                 <div class="project-card-header">
                   <span class="project-eyebrow">Android Health Hub &bull; Local AI</span>
-                  <button class="project-arrow-badge" id="open-odineye-modal"
-                    aria-label="Open Odin-Eye Architecture Dossier"
-                    title="View Full Specs &amp; Architecture">↗</button>
+                  <a href="https://odin-eye.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="project-arrow-badge" aria-label="Visit Odin-Eye live app"
+                    title="Launch Odin-Eye Live Demo">↗</a>
                 </div>
 
                 <!-- Mini App Terminal / UI Preview -->
@@ -1003,20 +1018,23 @@
                     <span class="titlebar-dot dot-red"></span>
                     <span class="titlebar-dot dot-yellow"></span>
                     <span class="titlebar-dot dot-green"></span>
-                    <span class="titlebar-url">android://odineye.health.local</span>
+                    <a href="https://odin-eye.netlify.app/" target="_blank" rel="noopener noreferrer"
+                      class="titlebar-url">odin-eye.netlify.app</a>
                   </div>
                   <div class="preview-body">
                     <div class="metric-pill-row">
+                      <button type="button" class="status-metric-pill" id="open-odineye-modal"
+                        style="cursor: pointer; border-color: var(--accent-color); color: var(--accent-color);"
+                        title="View Full Architecture &amp; AI Specs">Architecture Dossier ↗</button>
                       <span class="status-metric-pill">Gemini Nano (AICore)</span>
                       <span class="status-metric-pill">Health Connect</span>
-                      <span class="status-metric-pill">Zero Cloud Telemetry</span>
-                      <span class="status-metric-pill">Procedural Audio</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="project-info">
-                  <h3>Odin-Eye</h3>
+                  <h3><a href="https://odin-eye.netlify.app/" target="_blank" rel="noopener noreferrer"
+                      class="project-title-link">Odin-Eye</a></h3>
                   <p>A centralized personal health hub for Android aggregating live biometrics from wearables and Health
                     Connect, tracking medication routines with real-time push reminders, analyzing muscle recovery &amp;
                     sleep debt, and delivering on-device AI coaching (Gemini Nano) — 100% offline with zero cloud
@@ -1071,11 +1089,13 @@
                 </div>
               </article>
 
-              <!-- Project 3: FinTrack Dashboard -->
-              <article class="project-bento-card">
+              <!-- Project 3: Hermex Terminal -->
+              <article class="project-bento-card" id="card-hermex">
                 <div class="project-card-header">
-                  <span class="project-eyebrow">Fintech Data Analytics</span>
-                  <div class="project-arrow-badge">↗</div>
+                  <span class="project-eyebrow">Institutional HFT &bull; Quant Terminal</span>
+                  <a href="https://hermex-terminal.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="project-arrow-badge" aria-label="Visit Hermex live terminal"
+                    title="Launch Hermex Live Terminal">↗</a>
                 </div>
 
                 <div class="project-preview-frame">
@@ -1083,24 +1103,36 @@
                     <span class="titlebar-dot dot-red"></span>
                     <span class="titlebar-dot dot-yellow"></span>
                     <span class="titlebar-dot dot-green"></span>
+                    <a href="https://hermex-terminal.netlify.app/" target="_blank" rel="noopener noreferrer"
+                      class="titlebar-url">hermex-terminal.netlify.app</a>
                   </div>
                   <div class="preview-body">
                     <div class="metric-pill-row">
-                      <span class="status-metric-pill">D3.js Real-Time Charts</span>
-                      <span class="status-metric-pill">Market Trend Stream</span>
+                      <button type="button" class="status-metric-pill" id="open-hermex-modal"
+                        style="cursor: pointer; border-color: var(--accent-color); color: var(--accent-color);"
+                        title="View Full Architecture &amp; Quant Models">Architecture Dossier ↗</button>
+                      <span class="status-metric-pill">Sub-100ms L2</span>
+                      <span class="status-metric-pill">Zero Backend</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="project-info">
-                  <h3>FinTrack Dashboard</h3>
-                  <p>Complex data visualization dashboard engineered for tracking high-frequency trading investments,
-                    market movements, and statistical financial trends.</p>
+                  <h3><a href="https://hermex-terminal.netlify.app/" target="_blank" rel="noopener noreferrer"
+                      class="project-title-link">Hermex Terminal</a></h3>
+                  <p>Institutional-grade, zero-backend market analytics and high-frequency trading terminal running 100%
+                    client-side in the browser. Streams live Binance WebSockets, offloading Kyle's Lambda slippage, VPIN
+                    order flow toxicity, GARCH volatility, and Monte Carlo VaR to a dedicated background Web Worker with
+                    60–120 FPS TradingView, D3, and Three.js visualizers.</p>
                   <div class="project-tags-list">
-                    <span>Vue.js</span>
+                    <span>React 19</span>
+                    <span>TypeScript 5.8</span>
+                    <span>Tailwind CSS v4</span>
+                    <span>Web Workers</span>
+                    <span>TradingView</span>
                     <span>D3.js</span>
-                    <span>Python</span>
-                    <span>REST API</span>
+                    <span>Three.js</span>
+                    <span>WebSockets</span>
                   </div>
                 </div>
               </article>
@@ -1248,6 +1280,14 @@
             <span class="stat-text">Multi-wearable biometrics &amp; sleep telemetry aggregation</span>
           </div>
         </div>
+
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://odin-eye.netlify.app/" target="_blank" rel="noopener noreferrer"
+            class="project-spec-link" style="text-decoration: none;">
+            <span>Launch Live App</span>
+            <span class="spec-arrow">↗</span>
+          </a>
+        </div>
       </section>
 
       <!-- Section: Tab Architecture -->
@@ -1310,7 +1350,8 @@
                 — 100% offline, zero cloud transmission.</li>
               <li><strong>Interactive Transcribe Card:</strong> Real-time streaming voice transcription into an editable
                 <code>TextInput</code>, allowing hands-free speaking, tap-to-correct editing, manual typing, or 1-tap
-                suggested query selection.</li>
+                suggested query selection.
+              </li>
               <li><strong>Audio Equalizer &amp; Native Animations:</strong> 5-bar live equalizer animating dynamically
                 with 100% Native Driver (<code>useNativeDriver: true</code>) without JS bridge overhead.</li>
               <li><strong>Audio Read-Aloud:</strong> Optional toggle to speak AI responses out loud automatically using
@@ -1427,6 +1468,183 @@
               <li>Morphing vector SVG face (<code>MoodFaceIcon</code>) across 5 emotional states (Unhappy, Sad, Normal,
                 Good, Happy) paired with reactive pastel concentric ripple auras, spring bounce physics, and persistent
                 daily state.</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </dialog>
+
+  <!-- ========================================================================
+       HERMEX ARCHITECTURAL DOSSIER MODAL
+       ======================================================================== -->
+  <dialog id="hermex-dialog" class="project-modal" aria-labelledby="modal-hermex-title">
+    <div class="modal-header">
+      <div class="modal-header-info">
+        <span class="modal-eyebrow">Institutional HFT &amp; Quantitative Engine</span>
+        <h2 id="modal-hermex-title">Hermex Terminal</h2>
+        <p class="modal-header-subtitle">Zero-Backend Institutional Market Analytics &bull; 100% Client-Side</p>
+      </div>
+      <button class="modal-close-btn" id="close-hermex-modal" aria-label="Close dialog">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <!-- Section: Executive Overview -->
+      <section class="modal-section">
+        <p class="modal-lead-text">
+          <strong>Hermex</strong> is an institutional-grade, zero-backend market analytics and high-frequency trading
+          terminal running 100% client-side in the browser. Named after <em>Hermes</em> — the swift Greek god of
+          commerce, boundaries, and trade — Hermex delivers sub-100ms real-time market microstructure analysis,
+          mathematical risk models, and interactive visualizers directly from public exchange WebSockets with zero proxy
+          servers or API paywalls.
+        </p>
+
+        <div class="modal-key-stats-row">
+          <div class="modal-key-stat">
+            <span class="stat-badge">⚡ 15–40ms Latency</span>
+            <span class="stat-text">Direct Binance WebSockets (depth20@100ms, aggTrade, kline_1m)</span>
+          </div>
+          <div class="modal-key-stat">
+            <span class="stat-badge">🧵 Dedicated Web Worker</span>
+            <span class="stat-text">Off-thread VPIN, OFI, GARCH(1,1), and 10,000 Monte Carlo runs</span>
+          </div>
+          <div class="modal-key-stat">
+            <span class="stat-badge">🏛️ 100% Client-Side</span>
+            <span class="stat-text">Zero server backend required, native procedural Web Audio</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://hermex-terminal.netlify.app/" target="_blank" rel="noopener noreferrer"
+            class="project-spec-link" style="text-decoration: none;">
+            <span>Launch Live Terminal</span>
+            <span class="spec-arrow">↗</span>
+          </a>
+          <a href="https://github.com/novartus/Hermex" target="_blank" rel="noopener noreferrer"
+            class="project-spec-link" style="text-decoration: none;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            <span>GitHub Repository</span>
+            <span class="spec-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section: Workspaces Architecture -->
+      <section class="modal-section">
+        <h3 class="modal-section-heading">Workspaces &bull; Keyboard Shortcuts</h3>
+        <div class="modal-tabs-grid">
+          <div class="modal-tab-item">
+            <div class="tab-badge">⌥ + 1 &bull; Overview</div>
+            <p>Executive cockpit displaying TradingView chart, L2 depth ladder, liquidity heatmap, active tape, and
+              quant KPIs in a single responsive view.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">⌥ + 2 &bull; Microstructure</div>
+            <p>Deep-dive into high-frequency limit order books, bid/ask queues, and real-time order book imbalance
+              metrics.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">⌥ + 3 &bull; Quant &amp; Trends</div>
+            <p>D3.js interactive correlation chord networks, Pearson correlation heatmaps, Hurst exponents, and
+              Sharpe/Sortino ratios.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">⌥ + 4 &bull; Algo Lab</div>
+            <p>Interactive execution console with customizable slice durations, Kyle's Lambda market impact, and live
+              simulated fills.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">⌥ + 5 &bull; Risk &amp; Portfolio</div>
+            <p>Multi-asset position tracker, P&amp;L attribution, drawdown analysis, and Monte Carlo confidence
+              intervals.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">Cmd + K &bull; Spotlight</div>
+            <p>Universal command palette for instant symbol search, workspace switching, algorithm execution, and audio
+              toggling.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Core Mathematical Models & Capabilities -->
+      <section class="modal-section">
+        <h3 class="modal-section-heading">Core Quantitative Models &amp; Innovations</h3>
+        <div class="modal-highlights-stack">
+
+          <!-- Highlight 1 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">📊</span>
+              <h4>VPIN Toxicity &amp; Order Flow Imbalance (OFI)</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>Volume-Synchronized Probability of Toxicity (VPIN):</strong> Quantifies adverse selection risk
+                and detects informed trader order flow imbalances across volume buckets.</li>
+              <li><strong>Order Flow Imbalance (OFI):</strong> Real-time calculation of liquidity deltas at the Best Bid
+                &amp; Offer (BBO) with directional pressure indicators.</li>
+              <li><strong>Off-Thread Crunching:</strong> Computed inside <code>hft-worker.ts</code> via dedicated Web
+                Worker to maintain rock-solid 60–120 FPS UI rendering.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 2 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🎲</span>
+              <h4>Monte Carlo Value-at-Risk &amp; GARCH(1,1) Volatility</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>10,000 Trajectory Simulation:</strong> Off-thread simulated portfolio paths calculating 1-day
+                95%/99% VaR and Expected Shortfall (CVaR).</li>
+              <li><strong>GARCH(1,1) Forecasting:</strong> Rolling conditional volatility forecasting with statistical
+                regime classifications (Normal, Elevated, Extreme).</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 3 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🔥</span>
+              <h4>Dynamic Liquidity Heatmap &amp; Sub-100ms L2 Ladder</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>Bookmap-Style Canvas Heatmap:</strong> High-resolution HTML5 Canvas rendering of historical
+                depth density, bid/ask depth walls, and whale liquidity clusters.</li>
+              <li><strong>Sub-100ms L2 Ladder:</strong> Millisecond-accurate order book ladder showing micro-price
+                weighted spread, depth ratio, and cumulative volume.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 4 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🤖</span>
+              <h4>Institutional Smart Algo Execution Router</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>Simulated Execution Strategies:</strong> Live execution of <strong>TWAP</strong>,
+                <strong>VWAP</strong>, <strong>POV (15%)</strong>, and <strong>Iceberg</strong> orders.</li>
+              <li><strong>Kyle's Lambda Slippage:</strong> Mathematical market impact modeling estimating price
+                degradation under varying execution velocity and order sizing.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 5 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🔊</span>
+              <h4>Procedural Web Audio Engine</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li>Harmonic sine and sawtooth synthesis via Web Audio API for whale order triggers (&gt;$100k), algo
+                order fills, and toxicity alerts — zero external audio files.</li>
             </ul>
           </article>
 

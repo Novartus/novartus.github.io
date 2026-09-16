@@ -23,17 +23,16 @@ Personal engineering portfolio showcasing enterprise architecture, open-source p
 
 ### 🚀 Featured Engineering
 
-- **[Odin-Eye](https://github.com/novartus):** Centralized personal health hub for Android aggregating live biometrics via Android Health Connect, real-time medication tracking, and on-device AI coaching with zero-cloud privacy.
+- **[Hermex Terminal](https://hermex-terminal.netlify.app/):** Institutional-grade, zero-backend HFT & statistical market analytics terminal running 100% client-side. Sub-100ms L2 order book matching, Kyle's Lambda slippage, Hawkes processes, and multithreaded Web Worker quant crunching (React 19, TypeScript 5.8, Tailwind CSS v4, TradingView, D3.js, Three.js).
+- **[Odin-Eye](https://odin-eye.netlify.app/):** Centralized personal health hub for Android aggregating live biometrics via Android Health Connect, real-time medication tracking, and on-device AI coaching with zero-cloud privacy.
 - **[KyberFlow](https://kyberflow.netlify.app/):** Autonomous AI developer agent orchestration platform built with TypeScript, Python, FastAPI, and WebSockets.
-- **Automated AI Code Reviewer:** GitHub Actions CI/CD automation leveraging AST security parsing and LLM code intelligence.
-- **Interactive CLI File Manager:** High-performance terminal utility built with C++ and Vim keybindings.
 
 ---
 
 ### 🛠️ Core Tech
 
 - **Languages:** TypeScript, JavaScript, Python, Java, C++, SQL
-- **Frontend & UI:** React, Next.js, Electron, Modern CSS, WebSockets
+- **Frontend & UI:** React 19, Next.js, Electron, Tailwind CSS v4, TradingView, D3.js, Three.js, WebSockets, Web Workers
 - **Backend & Cloud:** Node.js, NestJS, Express, Spring Boot, OpenShift (OCP), Docker, Kubernetes, GitHub Actions
 
 ---
