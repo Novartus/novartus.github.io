@@ -1,151 +1,186 @@
-// Mobile Navigation Toggle
+// ==========================================================================
+// Abhee Hudani Portfolio - Fixed Screen App & View Switcher
+// ==========================================================================
+
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const links = document.querySelectorAll('.nav-links li');
+  // 1. DYNAMIC EXPERIENCE & COPYRIGHT
+  const startYear = 2023;
+  const currentYear = new Date().getFullYear();
+  const expYears = currentYear - startYear + 1;
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
+  const expElement = document.getElementById('exp-years');
+  if (expElement) {
+    expElement.textContent = `${expYears}+`;
+  }
+  const bentoExpElement = document.getElementById('bento-exp-stat');
+  if (bentoExpElement) {
+    bentoExpElement.textContent = `${expYears}+`;
+  }
+  const copyrightYearElement = document.getElementById('copyright-year');
+  if (copyrightYearElement) {
+    copyrightYearElement.textContent = currentYear;
+  }
 
-        // Animate links
-        links.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-            }
-        });
-    });
+  // 2. VIEW SWITCHER ENGINE
+  const navTabs = document.querySelectorAll('.nav-vertical-link');
+  const viewPanels = document.querySelectorAll('.view-panel');
+  const appViewport = document.getElementById('app-viewport');
 
-    // Close mobile menu when a link is clicked
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('active');
-            links.forEach(link => link.style.animation = '');
-        });
-    });
+  // Valid view mappings
+  const validViews = ['view-about', 'view-skills', 'view-experience', 'view-projects', 'view-contact'];
 
-    // Dynamic Years of Experience
-    const startYear = 2023;
-    const currentYear = new Date().getFullYear();
-    const expYears = currentYear - startYear + 1;
-    const expElement = document.getElementById('exp-years');
-    if (expElement) {
-        expElement.textContent = `${expYears}+`;
+  function switchView(targetViewId, updateUrl = true) {
+    if (!validViews.includes(targetViewId)) {
+      targetViewId = 'view-about';
     }
 
-    // Dynamic Copyright Year
-    const copyrightYearElement = document.getElementById('copyright-year');
-    if (copyrightYearElement) {
-        copyrightYearElement.textContent = currentYear;
-    }
+    const currentActivePanel = document.querySelector('.view-panel.active');
+    const targetPanel = document.getElementById(targetViewId);
 
-    // Sticky Navbar
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    if (!targetPanel) return;
+    if (currentActivePanel === targetPanel) return;
 
-    // Scroll Animation Observer
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+    // Transition execution
+    const executeSwitch = () => {
+      // Update Tab Buttons (seamless vertical links + about me badge)
+      navTabs.forEach(tab => {
+        const isMatch = tab.getAttribute('data-view') === targetViewId;
+        tab.classList.toggle('active', isMatch);
+        tab.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+      });
+
+      // Update View Panels
+      viewPanels.forEach(panel => {
+        panel.classList.remove('active');
+      });
+      targetPanel.classList.add('active');
+
+      // Scroll viewport back to top smoothly
+      if (appViewport) {
+        appViewport.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-up');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.section-title, .about-text, .stat-item, .skill-category, .timeline-item').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(el);
-    });
-
-    // Add CSS class for animation via JS to keep logic centralized
-    const style = document.createElement('style');
-    style.innerHTML = `
-        .animate-up {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-        
-        @keyframes navLinkFade {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
-    `;
-    document.head.appendChild(style);
-    // Theme Switcher Logic
-    const themeToggle = document.querySelector('.theme-toggle');
-    const htmlElement = document.documentElement;
-    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemMedia = window.matchMedia('(prefers-color-scheme: dark)');
-
-    const applyTheme = (isDark) => {
-        if (isDark) {
-            htmlElement.setAttribute('data-theme', 'dark');
-            if (metaThemeColor) metaThemeColor.setAttribute('content', '#020617');
-        } else {
-            htmlElement.setAttribute('data-theme', 'light');
-            if (metaThemeColor) metaThemeColor.setAttribute('content', '#f8fafc');
-        }
-    };
-
-    // Apply saved theme or system preference
-    if (savedTheme) {
-        applyTheme(savedTheme === 'dark');
+    // Modern View Transitions API with graceful fallback
+    if ('startViewTransition' in document) {
+      document.startViewTransition(() => {
+        executeSwitch();
+      });
     } else {
-        applyTheme(systemMedia.matches);
+      executeSwitch();
     }
 
-    // Listen for system theme changes if no explicit user preference is saved
-    systemMedia.addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            applyTheme(e.matches);
-        }
+    // Update URL hash without jarring page jump
+    if (updateUrl) {
+      const hashId = targetViewId.replace('view-', '');
+      try {
+        window.history.pushState(null, '', `#${hashId}`);
+      } catch (e) {
+        window.location.hash = hashId;
+      }
+    }
+  }
+
+  // Vertical Navigation Tab Click Listeners
+  navTabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetView = tab.getAttribute('data-view');
+      switchView(targetView, true);
+    });
+  });
+
+  // Switch View Buttons inside cards (e.g. Bento cards, editorial arrow, title symbols)
+  document.querySelectorAll('.switch-tab-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const targetView = btn.getAttribute('data-view');
+      if (targetView) {
+        e.preventDefault();
+        switchView(targetView, true);
+      }
+    });
+  });
+
+  // Handle URL hash on initial load and browser back/forward buttons
+  function handleHashNavigation() {
+    const hash = window.location.hash.replace('#', '').toLowerCase();
+    if (hash) {
+      const targetViewId = `view-${hash}`;
+      if (validViews.includes(targetViewId)) {
+        switchView(targetViewId, false);
+      }
+    }
+  }
+
+  window.addEventListener('popstate', handleHashNavigation);
+  handleHashNavigation();
+
+  // 3. THEME TOGGLE CONTROLLER
+  const htmlElement = document.documentElement;
+  const themeToggles = document.querySelectorAll('.theme-toggle');
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+  // Load saved theme or default to light
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    htmlElement.setAttribute('data-theme', 'dark');
+    if (metaThemeColor) metaThemeColor.setAttribute('content', '#07090E');
+  } else {
+    htmlElement.setAttribute('data-theme', 'light');
+    if (metaThemeColor) metaThemeColor.setAttribute('content', '#EAEBED');
+  }
+
+  themeToggles.forEach(toggleBtn => {
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+
+      if (metaThemeColor) {
+        metaThemeColor.setAttribute('content', newTheme === 'dark' ? '#07090E' : '#EAEBED');
+      }
+    });
+  });
+
+  // 4. ODIN-EYE ARCHITECTURE MODAL CONTROLLER
+  const odinDialog = document.getElementById('odineye-dialog');
+  const openOdinBtns = [
+    document.getElementById('open-odineye-modal'),
+    document.getElementById('card-odineye')
+  ];
+  const closeOdinBtn = document.getElementById('close-odineye-modal');
+
+  if (odinDialog) {
+    openOdinBtns.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          odinDialog.showModal();
+        });
+      }
     });
 
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            applyTheme(newTheme === 'dark');
-            localStorage.setItem('theme', newTheme);
-        });
+    if (closeOdinBtn) {
+      closeOdinBtn.addEventListener('click', () => {
+        odinDialog.close();
+      });
     }
+
+    // Close when clicking on dialog backdrop
+    odinDialog.addEventListener('click', (e) => {
+      const rect = odinDialog.getBoundingClientRect();
+      const isInDialog = (
+        rect.top <= e.clientY &&
+        e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX &&
+        e.clientX <= rect.left + rect.width
+      );
+      if (!isInDialog) {
+        odinDialog.close();
+      }
+    });
+  }
 });
