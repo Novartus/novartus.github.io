@@ -2200,45 +2200,71 @@ a.contact-channel-card:hover .channel-icon-circle {
     display: none !important;
   }
 
-  /* Bottom Mobile Floating Dock */
+  /* Bottom Mobile Floating Dock (High-Visibility Accent Border & 5-Column Grid) */
   .seamless-sidebar {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100vw;
-    height: 64px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    min-height: 58px;
     flex-direction: row;
-    padding: 0 1rem;
-    border-top: 1px solid var(--border-color);
-    background: var(--board-bg) !important;
-    backdrop-filter: blur(16px);
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    padding: 0.4rem 0.6rem calc(0.4rem + env(safe-area-inset-bottom, 0px));
+    border-top: 2.5px solid var(--accent-color);
+    background: var(--card-bg) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.12), 0 -1px 8px var(--accent-glow);
     z-index: 1000;
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .seamless-nav {
-    flex-direction: row;
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.25rem;
     width: 100%;
-    justify-content: space-around;
+    max-width: 520px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav-vertical-link {
     writing-mode: horizontal-tb;
     transform: none;
-    font-size: 0.88rem;
-    padding: 0.5rem 0.75rem;
+    font-size: clamp(0.72rem, 2.7vw, 0.84rem);
+    font-weight: 600;
+    padding: 0.45rem 0.15rem;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    transition: all 0.2s ease;
   }
 
   .nav-vertical-link:hover {
     transform: none;
+    color: var(--text-primary);
+  }
+
+  .nav-vertical-link.active {
+    color: var(--accent-color);
+    font-weight: 800;
+    background: var(--accent-glow);
   }
 
   .app-viewport {
     height: auto;
     overflow-y: visible;
-    padding-bottom: 74px;
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
   }
 
   .view-container {
