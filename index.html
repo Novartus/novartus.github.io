@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhee Hudani | Senior Full Stack Developer</title>
   <meta name="description"
-    content="Abhee Hudani is a Senior Full Stack Developer specializing in scalable web applications, React, Node.js, and Cloud Architecture.">
+    content="Senior Full Stack Developer at RBC specializing in scalable enterprise web applications, Next-Gen architecture, cloud infrastructure, and GenAI workflows.">
   <meta name="keywords"
-    content="Abhee Hudani, Novartus, Senior Full Stack Developer, React Developer, Node.js, Web Development, Software Engineer">
+    content="Abhee Hudani, Full Stack Developer, React Native, Expo, Senior Software Engineer, RBC, React, Node.js, TypeScript, Next.js, Java, Spring Boot, AWS, OCP, GenAI, Portfolio">
   <meta name="author" content="Abhee Hudani">
+  <meta name="theme-color" content="#eaebf0">
+
+  <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Abhee Hudani | Senior Full Stack Developer">
   <meta property="og:description"
-    content="Senior Full Stack Developer specializing in scalable web applications and modern UI/UX. View my portfolio.">
+    content="Senior Full Stack Developer at RBC specializing in enterprise architecture, resilient cloud platforms, and GenAI workflows.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://novartus.github.io">
-  <meta property="og:site_name" content="Abhee Hudani Portfolio">
-  <meta property="og:image" content="https://novartus.github.io/static/og.png">
+  <meta property="og:image" content="https://novartus.github.io/static/avatar.png">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@novartus">
-  <meta name="twitter:creator" content="@novartus">
   <meta name="twitter:title" content="Abhee Hudani | Senior Full Stack Developer">
   <meta name="twitter:description"
-    content="Senior Full Stack Developer specializing in scalable web applications and modern UI/UX. View my portfolio.">
-  <meta name="twitter:image" content="https://novartus.github.io/static/og.png">
-  <link rel="canonical" href="https://novartus.github.io">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0a192f">
-  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="manifest.json">
+    content="Senior Full Stack Developer at RBC specializing in enterprise architecture, resilient cloud platforms, and GenAI workflows.">
+  <meta name="twitter:image" content="https://novartus.github.io/static/avatar.png">
+
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- JSON-LD Structured Data -->
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
     [
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Abhee Hudani",
-        "alternateName": "Novartus",
-        "url": "https://novartus.github.io",
         "jobTitle": "Senior Full Stack Developer",
         "worksFor": {
           "@type": "Organization",
@@ -49,7 +45,7 @@
           "@type": "CollegeOrUniversity",
           "name": "University of Windsor"
         },
-        "knowsAbout": ["JavaScript", "React", "Node.js", "Java", "Spring Boot", "TypeScript", "Next.js", "AWS", "OCP", "Docker", "Kubernetes", "GenAI", "MySQL", "MongoDB"],
+        "knowsAbout": ["JavaScript", "React", "React Native", "Expo", "Node.js", "Java", "Spring Boot", "TypeScript", "Next.js", "AWS", "OCP", "Docker", "Kubernetes", "GenAI", "MySQL", "MongoDB"],
         "sameAs": [
           "https://github.com/novartus",
           "https://linkedin.com/in/hudaniabhee"
@@ -65,344 +61,1136 @@
     </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">Abhee Hudani</a>
-      <ul class="nav-links">
-        <li><a href="#about">01. About</a></li>
-        <li><a href="#skills">02. Skills</a></li>
-        <li><a href="#experience">03. Experience</a></li>
-        <li><a href="#projects">04. Projects</a></li>
-        <!-- <li><a href="#contact" class="btn-primary">Connect</a></li> -->
-      </ul>
-      <div class="nav-controls">
-        <button class="theme-toggle" aria-label="Toggle theme">
-          <!-- Sun Icon -->
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <!-- Moon Icon -->
-          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-        <div class="hamburger" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div class="app-stage">
+    <div class="app-board">
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="container hero-content">
-        <span class="eyebrow">Hi, my name is Abhee Hudani</span>
-        <h1>Senior Full Stack <br> Developer.</h1>
-        <p>Architecting robust digital ecosystems; engineered for performance, fueled by coffee.</p>
-        <div class="hero-actions">
-          <div class="hero-cta-group">
-            <a href="#projects" class="btn-primary">View My Work</a>
-            <a href="#contact" class="btn-secondary">Contact Me</a>
-          </div>
-          <div class="hero-social-group">
-            <a href="https://linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer"
-              class="btn-secondary social-btn" aria-label="LinkedIn Profile">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="https://github.com/novartus" target="_blank" rel="noopener noreferrer"
-              class="btn-secondary social-btn" aria-label="GitHub Profile">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                </path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- ==========================================================================
+           SEAMLESS LEFT VERTICAL NAVIGATION (NO BORDERS, NO BACKGROUND - EXACT REFERENCE)
+           ========================================================================== -->
+      <aside class="seamless-sidebar" aria-label="Section Navigation">
+        <nav class="seamless-nav">
+          <button class="nav-vertical-link active" data-view="view-about" role="tab" aria-selected="true">About</button>
+          <button class="nav-vertical-link" data-view="view-skills" role="tab" aria-selected="false">Skills</button>
+          <button class="nav-vertical-link" data-view="view-experience" role="tab"
+            aria-selected="false">Experience</button>
+          <button class="nav-vertical-link" data-view="view-projects" role="tab" aria-selected="false">Projects</button>
+          <button class="nav-vertical-link" data-view="view-contact" role="tab" aria-selected="false">Contact</button>
+        </nav>
+      </aside>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title"><span
-            style="color: var(--accent-color); font-size: 0.6em; margin-right: 15px;">01.</span> About Me</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>Ever since I was young, my curiosity and passion for technology have driven me to explore how things
-              work. What started as tinkering has evolved into a career building enterprise-grade solutions. With <span
-                id="exp-years">4+</span> years of experience, I specialize in architecting scalable, secure, and
-              user-centric web applications.</p>
-            <p>Currently, as a Senior Full Stack Developer at RBC, I lead the technical direction of next-gen banking
-              platforms. My role blends architectural strategy with hands-on coding, DevOps automation, and ensuring
-              strict accessibility & security compliance. Beyond the code, I am a passionate <strong>GenAI
-                Advocate</strong> and mentor, dedicated to fostering innovation and excellence within my team.</p>
-          </div>
+      <!-- Mobile Floating Header -->
+      <header class="mobile-app-header">
+        <div class="mobile-brand">
+          <span class="monogram-text">AH</span>
+          <span class="mobile-name">Abhee Hudani</span>
         </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title"><span
-            style="color: var(--accent-color); font-size: 0.6em; margin-right: 15px;">02.</span> Technical Arsenal</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Frontend Architecture</h3>
-            <div class="skill-tags">
-              <span>JavaScript</span>
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Next.js</span>
-              <span>Tailwind CSS</span>
-              <span>Framer Motion</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Backend Systems</h3>
-            <div class="skill-tags">
-              <span>Node.js</span>
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>Python</span>
-              <span>Flask</span>
-              <span>MySQL</span>
-              <span>MSSQL</span>
-              <span>MongoDB</span>
-              <span>PostgreSQL</span>
-              <span>Redis</span>
-              <span>GraphQL</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>DevOps & Cloud</h3>
-            <div class="skill-tags">
-              <span>Docker</span>
-              <span>Kubernetes</span>
-              <span>OCP (OpenShift)</span>
-              <span>AWS</span>
-              <span>Azure</span>
-              <span>Terraform</span>
-              <span>CI/CD Pipelines</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title"><span
-            style="color: var(--accent-color); font-size: 0.6em; margin-right: 15px;">03.</span> Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">September 2023 - Present</span>
-            <div class="timeline-content">
-              <h3>Senior Full Stack Developer</h3>
-              <span class="company">Royal Bank of Canada (RBC)</span>
-              <ul>
-                <li><strong>Architecture & Development:</strong> Combine architectural leadership with hands-on
-                  development of complex features, ensuring scalability and migration success across enterprise
-                  projects.</li>
-                <li><strong>DevOps & Security:</strong> Manage CI/CD pipelines (GitHub Actions) and enforce security
-                  standards via DAST/SAST scanning and strict access policy management.</li>
-                <li><strong>Quality & Compliance:</strong> Enforce strict code compliance via SonarQube and
-                  comprehensive test cases, serving as application custodian and mentoring the team.</li>
-                <li><strong>Innovation & GenAI:</strong> Act as a <strong>GenAI Advocate</strong>, promoting the
-                  integration of artificial intelligence and modern technologies into financial workflows.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">January 2023 - August 2023</span>
-            <div class="timeline-content">
-              <h3>Developer Co-op</h3>
-              <span class="company">Royal Bank of Canada (RBC)</span>
-              <ul>
-                <li><strong>Self-Serve Automation:</strong> Engineered a streamlined NSIS installer for an
-                  Electron/React application, consolidating ~38k files into a single executable to significantly reduce
-                  installation time.</li>
-                <li><strong>Backend Migration:</strong> Spearheaded the migration from Java Spring Boot to
-                  Node.js/Express.js, creating a secure server architecture adherent to OWASP best practices.</li>
-                <li><strong>Infrastructure Modernization:</strong> Led the critical transition from deprecated
-                  Electron.js and React.js versions to modern iterations, improving long-term maintainability.</li>
-                <li><strong>Accessibility & UX:</strong> Implemented comprehensive accessibility features including
-                  keyboard navigation and shortcuts to enhance user inclusivity.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">June 2022 - August 2022</span>
-            <div class="timeline-content">
-              <h3>Web Developer</h3>
-              <span class="company">University of Windsor</span>
-              <ul>
-                <li><strong>JAMStack Overhaul:</strong> Revamped the HSLAB website using Next.js to develop a
-                  high-performance JAMStack application with integrated Netlify CMS.</li>
-                <li><strong>CMS Integration:</strong> Implemented a flexible CMS solution allowing for efficient content
-                  editing and seamless creation of new pages without developer intervention.</li>
-                <li><strong>Performance Optimization:</strong> Significantly enhanced website speed and overall web
-                  functionality to ensure an optimal user experience.</li>
-                <li><strong>SEO Strategy:</strong> Utilized industry-leading SEO practices to elevate HSLAB's online
-                  visibility and improve search engine rankings.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">May 2021 - September 2021</span>
-            <div class="timeline-content">
-              <h3>Full Stack Developer</h3>
-              <span class="company">Creole Studios</span>
-              <ul>
-                <li><strong>'GLEAC' Product Launch:</strong> Collaborated on and launched a high-performance JAMStack
-                  application using Next.js and Netlify CMS, focusing on optimal user experience.</li>
-                <li><strong>'FriMarked' API Development:</strong> Served as primary developer for RESTful APIs using
-                  NestJS and Express.js with MySQL, ensuring scalability and efficiency.</li>
-                <li><strong>Performance Optimization:</strong> Expertly leveraged advanced JavaScript data structures
-                  (Maps, Sets) to optimize application performance and data processing speed.</li>
-                <li><strong>Innovation & Strategy:</strong> Actively researched and implemented emerging web
-                  technologies to elevate project outcomes and website performance.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">June 2020 - October 2020</span>
-            <div class="timeline-content">
-              <h3>Full Stack Developer Intern</h3>
-              <span class="company">Creole Studios</span>
-              <ul>
-                <li><strong>'Mizaru' API Development:</strong> Developed robust RESTful APIs using Node.js, Express.js,
-                  and PostgreSQL, serving as the backend foundation for the 'Mizaru' project.</li>
-                <li><strong>Frontend Integration:</strong> Collaborated closely with the team to seamlessly integrate
-                  APIs with the React.js and Redux.js frontend, ensuring optimized data flow.</li>
-                <li><strong>Payment Solutions:</strong> Successfully engaged in the integration of the Stripe payment
-                  gateway, facilitating secure and efficient online transactions.</li>
-                <li><strong>Agile Collaboration:</strong> Actively participated in Agile workflows and daily Scrum
-                  meetings to ensure precise team coordination and project tracking.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title"><span
-            style="color: var(--accent-color); font-size: 0.6em; margin-right: 15px;">04.</span> Featured Work</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-content">
-              <h3>E-Commerce Platform</h3>
-              <p>A high-performance e-commerce solution handled 50k+ daily users. Features real-time inventory and
-                AI-driven recommendations.</p>
-              <div class="project-tags">
-                <span>Next.js</span>
-                <span>Stripe</span>
-                <span>Supabase</span>
-              </div>
-              <div class="project-links">
-                <!-- Links can be added here -->
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-content">
-              <h3>KyberFlow Pro</h3>
-              <p>Collaborative task management tool for enterprise remote teams with real-time websocket updates and
-                offline support.</p>
-              <div class="project-tags">
-                <span>React</span>
-                <span>Firebase</span>
-                <span>Redux</span>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-content">
-              <h3>FinTrack Dashboard</h3>
-              <p>Complex data visualization dashboard for tracking high-frequency trading investments and market trends.
-              </p>
-              <div class="project-tags">
-                <span>Vue.js</span>
-                <span>D3.js</span>
-                <span>Python</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <p class="contact-subtitle">What's Next?</p>
-        <h2 class="section-title" style="justify-content: center; margin-bottom: 2rem;">Get In Touch</h2>
-        <p class="contact-subtitle">
-          Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a
-          question or just want to say hi, I'll try my best to get back to you!
-        </p>
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer"
-            class="contact-btn">
-            Say Hello
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-col">
-        <h3>Abhee Hudani</h3>
-        <p>Building digital experiences with passion and precision. Let's create something amazing together.</p>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="mobile-header-actions">
+          <button class="theme-toggle mobile-theme-btn" aria-label="Toggle theme">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+            </svg>
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a href="https://linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer"
+            class="eyebrow-social-btn" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
               <rect x="2" y="9" width="4" height="12"></rect>
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
-          <a href="https://github.com/novartus" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <a href="https://github.com/novartus" target="_blank" rel="noopener noreferrer"
+            class="eyebrow-social-btn" aria-label="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <path
                 d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
               </path>
             </svg>
           </a>
         </div>
+      </header>
+
+      <!-- ==========================================================================
+           RIGHT CONTENT WORKSPACE (SCROLLABLE VIEWPORT)
+           ========================================================================== -->
+      <main class="app-viewport" id="app-viewport">
+
+        <!-- ========================================================================
+             VIEW 1: ABOUT (OVERVIEW - Directly Inspired by Reference Composition)
+             ======================================================================== -->
+        <section class="view-panel active" id="view-about" role="tabpanel" aria-labelledby="tab-about">
+          <div class="view-container">
+
+            <!-- Top Eyebrow Section Pill & Utility Controls -->
+            <div class="view-eyebrow-row">
+              <div class="eyebrow-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light and Dark Theme">
+                  <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                  <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+                </button>
+
+                <div class="eyebrow-socials">
+                  <a href="https://linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer"
+                    class="eyebrow-social-btn" aria-label="LinkedIn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/novartus" target="_blank" rel="noopener noreferrer"
+                    class="eyebrow-social-btn" aria-label="GitHub">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Layout Grid: Left Profile Card + Right Bento Grid -->
+            <div class="overview-main-grid">
+
+              <!-- Left Hero Profile Card (Lilac / Purple Signature from Reference) -->
+              <div class="overview-profile-card">
+                <div class="profile-card-header">
+                  <div class="avatar-concentric-wrap">
+                    <div class="avatar-ring-outer">
+                      <div class="avatar-ring-inner">
+                        <img src="static/avatar.png" alt="Abhee Hudani" class="avatar-photo"
+                          onerror="this.style.display='none'">
+                        <div class="avatar-monogram">AH</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="profile-card-content">
+                  <span class="profile-greeting">Im,</span>
+                  <h2 class="profile-name">Abhee<br>Hudani</h2>
+                  <p class="profile-designation">Senior Full Stack Developer @ RBC</p>
+                </div>
+
+                <div class="profile-card-footer">
+                  <div class="profile-footer-left">
+                    <div class="profile-dashed-line"></div>
+                    <a href="https://linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer"
+                      class="profile-email-badge" aria-label="LinkedIn Profile">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg>
+                      <span>in/hudaniabhee</span>
+                    </a>
+                  </div>
+
+                  <!-- Rotating Circular Vinyl Disc Record Badge from Reference -->
+                  <div class="rotating-vinyl-badge" aria-hidden="true">
+                    <div class="vinyl-disc">
+                      <svg class="stamp-svg" viewBox="0 0 100 100">
+                        <path id="vinylStampPath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"
+                          fill="none" />
+                        <text>
+                          <textPath href="#vinylStampPath" startOffset="0%">
+                            • PERSONAL PORTFOLIO • ARCHITECT
+                          </textPath>
+                        </text>
+                      </svg>
+                      <div class="vinyl-center-hole"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Editorial Title + Bento Cards -->
+              <div class="overview-content-column">
+
+                <!-- Grand Editorial Header -->
+                <div class="overview-editorial-header">
+                  <div class="editorial-title-row">
+                    <h1 class="editorial-title">Portfolio<span class="title-arrow-symbol switch-tab-btn"
+                        data-view="view-projects" role="button" aria-label="View Projects">⌝</span></h1>
+                  </div>
+                </div>
+
+                <!-- Flowing Bento Highlights Grid (Matching Reference Geometry) -->
+                <div class="overview-bento-grid">
+
+                  <!-- Bento Item 1: Large Visual Showcase Card (like the Flamingo card in reference) -->
+                  <div class="bento-showcase-card switch-tab-btn" data-view="view-projects" role="button"
+                    aria-label="Explore Projects">
+                    <div class="corner-bracket-arrow">⌝</div>
+                    <div class="showcase-visual-bg">
+                      <div class="showcase-badge-center">
+                        <div class="play-glass-pill">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="showcase-card-footer">
+                      <span class="showcase-tag">Mission-Critical Platforms</span>
+                      <h4 class="showcase-title">Next-Gen Banking Architecture</h4>
+                    </div>
+                  </div>
+
+                  <!-- Bento Item 2: Stacked Stat Cards (Mint & Purple) -->
+                  <div class="bento-stats-column">
+                    <!-- Stat Card A: 4+ Years Experience (Mint) -->
+                    <button class="bento-stat-card card-mint switch-tab-btn" data-view="view-experience"
+                      aria-label="Experience">
+                      <div class="corner-bracket-arrow">⌝</div>
+                      <div class="stat-inner-content">
+                        <span class="bento-large-number" id="bento-exp-stat">4+</span>
+                        <span class="bento-stat-label">Years Experience</span>
+                      </div>
+                    </button>
+
+                    <!-- Stat Card B: 15+ Arsenal (Purple) -->
+                    <button class="bento-stat-card card-purple switch-tab-btn" data-view="view-skills"
+                      aria-label="Skills">
+                      <div class="corner-bracket-arrow">⌝</div>
+                      <div class="stat-inner-content">
+                        <span class="bento-large-number">15+</span>
+                        <span class="bento-stat-label">Tech Arsenal</span>
+                      </div>
+                    </button>
+                  </div>
+
+                  <!-- Bento Item 3: Dark Charcoal Employer Card (like Apple / Clients card in reference) -->
+                  <button class="bento-client-card switch-tab-btn" data-view="view-experience"
+                    aria-label="Royal Bank of Canada">
+                    <div class="corner-bracket-arrow">⌝</div>
+                    <div class="client-icon-wrap">
+                      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                      </svg>
+                    </div>
+                    <div class="client-text-block">
+                      <h3 class="client-card-title">Royal Bank of Canada</h3>
+                      <p class="client-card-sub">Current Employer &bull; Alumni of UWindsor</p>
+                    </div>
+                  </button>
+
+                  <!-- Bento Item 4: Dual Split Card (Black with 3D Sphere + Warm Golden Amber) -->
+                  <div class="bento-dual-card switch-tab-btn" data-view="view-about" role="button"
+                    aria-label="GenAI Advocate">
+                    <div class="corner-bracket-arrow">⌝</div>
+                    <div class="dual-black-segment">
+                      <div class="sphere-3d" aria-hidden="true"></div>
+                    </div>
+                    <div class="dual-amber-segment">
+                      <span class="dual-badge-pill">Leadership</span>
+                      <h3 class="dual-amber-number">GenAI</h3>
+                      <p class="dual-amber-label">Advocate &amp; AI Workflows</p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Bottom Story & Focus Pillars Grid -->
+            <div class="about-extended-grid">
+
+              <!-- Main Narrative Card -->
+              <div class="about-narrative-card">
+                <div class="narrative-pill">Engineering Philosophy</div>
+                <p>
+                  With over <span id="exp-years">4+</span> years of enterprise production experience, I architect scalable financial systems and distributed cloud applications at <strong>Royal Bank of Canada (RBC)</strong>. I specialize in resilient microservices, high-scale APIs, and modern reactive frontends.
+                </p>
+                <p>
+                  At RBC, I lead the technical direction of critical compliance and audit applications on <strong>OpenShift (OCP)</strong>, automating financial review workflows at scale. As an active <strong>GenAI Advocate</strong>, I champion AI-augmented workflows, strict OWASP security standards, and WCAG accessibility compliance.
+                </p>
+                <div class="narrative-footer-stats">
+                  <div class="narrative-stat-item">
+                    <span class="stat-value">RBC</span>
+                    <span class="stat-desc">Current Employer</span>
+                  </div>
+                  <div class="narrative-stat-item">
+                    <span class="stat-value">UWindsor</span>
+                    <span class="stat-desc">Alumni</span>
+                  </div>
+                  <div class="narrative-stat-item">
+                    <span class="stat-value">GenAI</span>
+                    <span class="stat-desc">Advocate</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 Mini Bento Focus Pillars -->
+              <div class="about-pillars-grid">
+                <div class="about-pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                  <h4>Compliance &amp; Audit Systems</h4>
+                  <p>Architecting mission-critical compliance and audit applications at RBC. Engineering robust financial workflows and self-serve automations.</p>
+                  <div class="pillar-tags">
+                    <span class="pillar-tag">RBC Compliance</span>
+                    <span class="pillar-tag">Audit Automations</span>
+                  </div>
+                </div>
+
+                <div class="about-pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                  <h4>DevOps &amp; Cloud Security</h4>
+                  <p>Automating CI/CD pipelines via GitHub Actions and OpenShift (OCP), enforcing DAST/SAST security gates and strict OWASP standards.</p>
+                  <div class="pillar-tags">
+                    <span class="pillar-tag">OpenShift (OCP)</span>
+                    <span class="pillar-tag">CI/CD &amp; OWASP</span>
+                  </div>
+                </div>
+
+                <div class="about-pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                      </path>
+                    </svg>
+                  </div>
+                  <h4>GenAI Workflows &amp; Tooling</h4>
+                  <p>Championing generative AI adoption and LLM developer tooling across teams to accelerate engineering velocity and workflow automation.</p>
+                  <div class="pillar-tags">
+                    <span class="pillar-tag">GenAI Workflows</span>
+                    <span class="pillar-tag">LLM Tooling</span>
+                  </div>
+                </div>
+
+                <div class="about-pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <h4>Quality &amp; Custodianship</h4>
+                  <p>Serving as application custodian upholding strict SonarQube zero-debt benchmarks, WCAG 2.1 AA accessibility, and team mentorship.</p>
+                  <div class="pillar-tags">
+                    <span class="pillar-tag">SonarQube</span>
+                    <span class="pillar-tag">WCAG 2.1 AA</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ========================================================================
+             VIEW 2: SKILLS (TECHNICAL ARSENAL)
+             ======================================================================== -->
+        <section class="view-panel" id="view-skills" role="tabpanel" aria-labelledby="tab-skills">
+          <div class="view-container">
+
+            <div class="view-section-header">
+              <h2 class="view-title">Skills<span class="title-arrow-symbol">⌝</span></h2>
+              <p class="view-subtitle">Core languages, enterprise frameworks, distributed databases, and cloud
+                infrastructure engineered for production reliability.</p>
+            </div>
+
+            <div class="skills-bento-grid">
+
+              <!-- Card 1: Frontend Architecture -->
+              <div class="skill-bento-card skill-card-frontend">
+                <div class="skill-card-top">
+                  <div class="skill-icon-circle icon-frontend">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                  <span class="skill-domain-pill">Client &amp; Mobile</span>
+                </div>
+                <h3>Frontend &amp; Mobile</h3>
+                <p class="skill-domain-desc">Building resilient, accessible, and high-performance web and mobile applications.</p>
+                <div class="skill-pill-tags">
+                  <span>React</span>
+                  <span>React Native</span>
+                  <span>Expo</span>
+                  <span>TypeScript</span>
+                  <span>JavaScript</span>
+                  <span>Next.js</span>
+                  <span>Tailwind CSS</span>
+                  <span>Framer Motion</span>
+                </div>
+              </div>
+
+              <!-- Card 2: Backend Systems -->
+              <div class="skill-bento-card skill-card-backend">
+                <div class="skill-card-top">
+                  <div class="skill-icon-circle icon-backend">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                      <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                      <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                      <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <span class="skill-domain-pill">Server &amp; Data Tier</span>
+                </div>
+                <h3>Backend Systems</h3>
+                <p class="skill-domain-desc">Architecting scalable microservices, secure APIs, and transactional data
+                  pipelines.</p>
+                <div class="skill-pill-tags">
+                  <span>Node.js</span>
+                  <span>Java</span>
+                  <span>Spring Boot</span>
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>MySQL</span>
+                  <span>MSSQL</span>
+                  <span>MongoDB</span>
+                  <span>PostgreSQL</span>
+                  <span>Redis</span>
+                  <span>GraphQL</span>
+                </div>
+              </div>
+
+              <!-- Card 3: DevOps & Cloud -->
+              <div class="skill-bento-card skill-card-devops">
+                <div class="skill-card-top">
+                  <div class="skill-icon-circle icon-devops">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-domain-pill">Cloud &amp; Infrastructure</span>
+                </div>
+                <h3>DevOps &amp; Cloud</h3>
+                <p class="skill-domain-desc">Enterprise CI/CD automation, container orchestration, and multi-cloud
+                  reliability.</p>
+                <div class="skill-pill-tags">
+                  <span>Docker</span>
+                  <span>Kubernetes</span>
+                  <span>OCP (OpenShift)</span>
+                  <span>AWS</span>
+                  <span>Azure</span>
+                  <span>Terraform</span>
+                  <span>CI/CD Pipelines</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ========================================================================
+             VIEW 3: EXPERIENCE (CAREER MILESTONES)
+             ======================================================================== -->
+        <section class="view-panel" id="view-experience" role="tabpanel" aria-labelledby="tab-experience">
+          <div class="view-container">
+
+            <div class="view-section-header">
+              <h2 class="view-title">Experience<span class="title-arrow-symbol">⌝</span></h2>
+              <p class="view-subtitle">A chronological record of architecting financial technology, modernization
+                initiatives, and engineering leadership.</p>
+            </div>
+
+            <div class="experience-bento-list">
+
+              <!-- Role 1: Senior Full Stack Developer (RBC) -->
+              <article class="milestone-bento-card current-role">
+                <div class="milestone-header">
+                  <div class="milestone-title-group">
+                    <div class="milestone-role-row">
+                      <h3 class="milestone-role">Senior Full Stack Developer</h3>
+                      <span class="milestone-status-badge">
+                        <span class="status-pulse-dot"></span> Present
+                      </span>
+                    </div>
+                    <div class="milestone-company-row">
+                      <span class="milestone-company-tag">Royal Bank of Canada (RBC)</span>
+                      <span class="milestone-dates">September 2023 – Present</span>
+                    </div>
+                  </div>
+                  <div class="milestone-corner-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="milestone-highlights-bar">
+                  <span class="highlight-chip">Compliance &amp; Audit Systems</span>
+                  <span class="highlight-chip">GitHub Actions CI/CD</span>
+                  <span class="highlight-chip">GenAI Advocate</span>
+                  <span class="highlight-chip">DAST/SAST Security</span>
+                </div>
+
+                <ul class="milestone-bullets">
+                  <li>
+                    <strong>Compliance &amp; Audit Architecture:</strong> Combine architectural leadership with hands-on
+                    development of complex features across mission-critical compliance and audit platforms, driving
+                    self-serve automation across RBC.
+                  </li>
+                  <li>
+                    <strong>DevOps &amp; Security:</strong> Manage CI/CD pipelines (GitHub Actions) and enforce
+                    enterprise security standards via DAST/SAST scanning and strict access policy management.
+                  </li>
+                  <li>
+                    <strong>Quality &amp; Compliance:</strong> Enforce strict code compliance via SonarQube and
+                    comprehensive test cases, serving as application custodian and mentoring the team.
+                  </li>
+                  <li>
+                    <strong>Innovation &amp; GenAI:</strong> Act as a <strong>GenAI Advocate</strong>, championing the
+                    integration of artificial intelligence and modern tooling into financial workflows.
+                  </li>
+                </ul>
+
+                <div class="milestone-footer-tags">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Node.js</span>
+                  <span>Java</span>
+                  <span>OCP</span>
+                  <span>Docker</span>
+                  <span>GitHub Actions</span>
+                  <span>SonarQube</span>
+                </div>
+              </article>
+
+              <!-- Role 2: Developer Co-op (RBC) -->
+              <article class="milestone-bento-card">
+                <div class="milestone-header">
+                  <div class="milestone-title-group">
+                    <div class="milestone-role-row">
+                      <h3 class="milestone-role">Developer Co-op</h3>
+                    </div>
+                    <div class="milestone-company-row">
+                      <span class="milestone-company-tag">Royal Bank of Canada (RBC)</span>
+                      <span class="milestone-dates">January 2023 – August 2023</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="milestone-highlights-bar">
+                  <span class="highlight-chip">NSIS Installer Automation</span>
+                  <span class="highlight-chip">Spring Boot to Node Migration</span>
+                  <span class="highlight-chip">OWASP Standards</span>
+                </div>
+
+                <ul class="milestone-bullets">
+                  <li>
+                    <strong>Self-Serve Automation:</strong> Engineered a streamlined NSIS installer for an
+                    Electron/React application, consolidating ~38k files into a single executable to significantly
+                    reduce installation time.
+                  </li>
+                  <li>
+                    <strong>Backend Migration:</strong> Spearheaded the migration from Java Spring Boot to
+                    Node.js/Express.js, creating a secure server architecture adherent to OWASP best practices.
+                  </li>
+                  <li>
+                    <strong>Infrastructure Modernization:</strong> Led the critical transition from deprecated
+                    Electron.js and React.js versions to modern iterations, improving long-term maintainability.
+                  </li>
+                  <li>
+                    <strong>Accessibility &amp; UX:</strong> Implemented comprehensive accessibility features including
+                    keyboard navigation and shortcuts to enhance user inclusivity.
+                  </li>
+                </ul>
+
+                <div class="milestone-footer-tags">
+                  <span>Electron.js</span>
+                  <span>React.js</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>NSIS</span>
+                  <span>OWASP</span>
+                </div>
+              </article>
+
+              <!-- Role 3: Web Developer (University of Windsor) -->
+              <article class="milestone-bento-card">
+                <div class="milestone-header">
+                  <div class="milestone-title-group">
+                    <div class="milestone-role-row">
+                      <h3 class="milestone-role">Web Developer</h3>
+                    </div>
+                    <div class="milestone-company-row">
+                      <span class="milestone-company-tag">University of Windsor</span>
+                      <span class="milestone-dates">June 2022 – August 2022</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="milestone-bullets">
+                  <li>
+                    <strong>JAMStack Overhaul:</strong> Revamped the HSLAB website using Next.js to develop a
+                    high-performance JAMStack application with integrated Netlify CMS.
+                  </li>
+                  <li>
+                    <strong>CMS Integration:</strong> Implemented a flexible CMS solution allowing for efficient content
+                    editing and seamless creation of new pages without developer intervention.
+                  </li>
+                  <li>
+                    <strong>Performance &amp; SEO:</strong> Significantly enhanced website speed and overall
+                    functionality while utilizing industry-leading SEO practices to elevate online visibility.
+                  </li>
+                </ul>
+
+                <div class="milestone-footer-tags">
+                  <span>Next.js</span>
+                  <span>JAMStack</span>
+                  <span>Netlify CMS</span>
+                  <span>SEO</span>
+                </div>
+              </article>
+
+              <!-- Role 4: Full Stack Developer (Creole Studios) -->
+              <article class="milestone-bento-card">
+                <div class="milestone-header">
+                  <div class="milestone-title-group">
+                    <div class="milestone-role-row">
+                      <h3 class="milestone-role">Full Stack Developer</h3>
+                    </div>
+                    <div class="milestone-company-row">
+                      <span class="milestone-company-tag">Creole Studios</span>
+                      <span class="milestone-dates">May 2021 – September 2021</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="milestone-bullets">
+                  <li>
+                    <strong>'GLEAC' Product Launch:</strong> Collaborated on and launched a high-performance JAMStack
+                    application using Next.js and Netlify CMS, focusing on optimal user experience.
+                  </li>
+                  <li>
+                    <strong>'FriMarked' API Development:</strong> Served as primary developer for RESTful APIs using
+                    NestJS and Express.js with MySQL, ensuring scalability and efficiency.
+                  </li>
+                  <li>
+                    <strong>Performance Optimization:</strong> Expertly leveraged advanced JavaScript data structures
+                    (Maps, Sets) to optimize application performance and data processing speed.
+                  </li>
+                </ul>
+
+                <div class="milestone-footer-tags">
+                  <span>NestJS</span>
+                  <span>Express.js</span>
+                  <span>MySQL</span>
+                  <span>Next.js</span>
+                  <span>JavaScript</span>
+                </div>
+              </article>
+
+              <!-- Role 5: Full Stack Developer Intern (Creole Studios) -->
+              <article class="milestone-bento-card">
+                <div class="milestone-header">
+                  <div class="milestone-title-group">
+                    <div class="milestone-role-row">
+                      <h3 class="milestone-role">Full Stack Developer Intern</h3>
+                    </div>
+                    <div class="milestone-company-row">
+                      <span class="milestone-company-tag">Creole Studios</span>
+                      <span class="milestone-dates">June 2020 – October 2020</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="milestone-bullets">
+                  <li>
+                    <strong>'Mizaru' API Development:</strong> Developed robust RESTful APIs using Node.js, Express.js,
+                    and PostgreSQL, serving as the backend foundation for the 'Mizaru' project.
+                  </li>
+                  <li>
+                    <strong>Frontend Integration:</strong> Collaborated closely with the team to seamlessly integrate
+                    APIs with the React.js and Redux.js frontend, ensuring optimized data flow.
+                  </li>
+                  <li>
+                    <strong>Payment Solutions:</strong> Successfully engaged in the integration of the Stripe payment
+                    gateway, facilitating secure and efficient online transactions.
+                  </li>
+                </ul>
+
+                <div class="milestone-footer-tags">
+                  <span>Node.js</span>
+                  <span>React.js</span>
+                  <span>Redux</span>
+                  <span>PostgreSQL</span>
+                  <span>Stripe</span>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ========================================================================
+             VIEW 4: PROJECTS (PORTFOLIO / FEATURED WORK)
+             ======================================================================== -->
+        <section class="view-panel" id="view-projects" role="tabpanel" aria-labelledby="tab-projects">
+          <div class="view-container">
+
+            <div class="view-section-header">
+              <h2 class="view-title">Projects<span class="title-arrow-symbol">⌝</span></h2>
+              <p class="view-subtitle">High-scale applications featuring reactive architecture, enterprise security, and
+                interactive data visualization.</p>
+            </div>
+
+            <div class="projects-bento-grid">
+
+              <!-- Project 1: Flagship Odin-Eye -->
+              <article class="project-bento-card project-card-featured" id="card-odineye">
+                <div class="project-card-header">
+                  <span class="project-eyebrow">Android Health Hub &bull; Local AI</span>
+                  <button class="project-arrow-badge" id="open-odineye-modal" aria-label="Open Odin-Eye Architecture Dossier" title="View Full Specs &amp; Architecture">↗</button>
+                </div>
+
+                <!-- Mini App Terminal / UI Preview -->
+                <div class="project-preview-frame">
+                  <div class="preview-titlebar">
+                    <span class="titlebar-dot dot-red"></span>
+                    <span class="titlebar-dot dot-yellow"></span>
+                    <span class="titlebar-dot dot-green"></span>
+                    <span class="titlebar-url">android://odineye.health.local</span>
+                  </div>
+                  <div class="preview-body">
+                    <div class="metric-pill-row">
+                      <span class="status-metric-pill">Gemini Nano (AICore)</span>
+                      <span class="status-metric-pill">Health Connect</span>
+                      <span class="status-metric-pill">Zero Cloud Telemetry</span>
+                      <span class="status-metric-pill">Procedural Audio</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-info">
+                  <h3>Odin-Eye</h3>
+                  <p>A centralized personal health hub for Android aggregating live biometrics from wearables and Health Connect, tracking medication routines with real-time push reminders, analyzing muscle recovery &amp; sleep debt, and delivering on-device AI coaching (Gemini Nano) — 100% offline with zero cloud transmission.</p>
+                  <div class="project-tags-list">
+                    <span>React Native</span>
+                    <span>Expo</span>
+                    <span>Health Connect</span>
+                    <span>Gemini Nano</span>
+                    <span>Native AudioTrack</span>
+                    <span>AES-256</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 2: KyberFlow Pro -->
+              <article class="project-bento-card">
+                <div class="project-card-header">
+                  <span class="project-eyebrow">Enterprise Collaboration</span>
+                  <a href="https://kyberflow.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-arrow-badge" aria-label="Visit KyberFlow live app" title="Open KyberFlow Live Demo">↗</a>
+                </div>
+
+                <div class="project-preview-frame">
+                  <div class="preview-titlebar">
+                    <span class="titlebar-dot dot-red"></span>
+                    <span class="titlebar-dot dot-yellow"></span>
+                    <span class="titlebar-dot dot-green"></span>
+                    <a href="https://kyberflow.netlify.app/" target="_blank" rel="noopener noreferrer" class="titlebar-url">kyberflow.netlify.app</a>
+                  </div>
+                  <div class="preview-body">
+                    <div class="metric-pill-row">
+                      <span class="status-metric-pill">Websocket Live Sync</span>
+                      <span class="status-metric-pill">Offline Support</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-info">
+                  <h3><a href="https://kyberflow.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-title-link">KyberFlow Pro</a></h3>
+                  <p>Collaborative task management tool for enterprise remote teams featuring real-time websocket
+                    updates, state management with Redux, and persistent offline support.</p>
+                  <div class="project-tags-list">
+                    <span>React</span>
+                    <span>Firebase</span>
+                    <span>Redux</span>
+                    <span>WebSockets</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 3: FinTrack Dashboard -->
+              <article class="project-bento-card">
+                <div class="project-card-header">
+                  <span class="project-eyebrow">Fintech Data Analytics</span>
+                  <div class="project-arrow-badge">↗</div>
+                </div>
+
+                <div class="project-preview-frame">
+                  <div class="preview-titlebar">
+                    <span class="titlebar-dot dot-red"></span>
+                    <span class="titlebar-dot dot-yellow"></span>
+                    <span class="titlebar-dot dot-green"></span>
+                  </div>
+                  <div class="preview-body">
+                    <div class="metric-pill-row">
+                      <span class="status-metric-pill">D3.js Real-Time Charts</span>
+                      <span class="status-metric-pill">Market Trend Stream</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-info">
+                  <h3>FinTrack Dashboard</h3>
+                  <p>Complex data visualization dashboard engineered for tracking high-frequency trading investments,
+                    market movements, and statistical financial trends.</p>
+                  <div class="project-tags-list">
+                    <span>Vue.js</span>
+                    <span>D3.js</span>
+                    <span>Python</span>
+                    <span>REST API</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ========================================================================
+             VIEW 5: CONTACT (CONNECT HUB)
+             ======================================================================== -->
+        <section class="view-panel" id="view-contact" role="tabpanel" aria-labelledby="tab-contact">
+          <div class="view-container">
+
+            <div class="contact-bento-hub">
+              <div class="contact-hub-header">
+                <h2 class="contact-main-heading">Let's build something extraordinary together.</h2>
+                <p class="contact-sub-text">
+                  Although I'm not actively looking for new roles, my inbox is always open. Whether you have questions
+                  about scalable enterprise banking systems, GenAI workflows, or just want to say hi — I'd love to
+                  connect!
+                </p>
+              </div>
+
+              <div class="contact-cards-row">
+
+                <!-- Card 1: LinkedIn -->
+                <a href="https://www.linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer"
+                  class="contact-channel-card contact-linkedin">
+                  <div class="channel-arrow">↗</div>
+                  <div class="channel-icon-circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <span class="channel-label">Primary Channel</span>
+                  <h3>LinkedIn</h3>
+                  <span class="channel-handle">in/hudaniabhee</span>
+                </a>
+
+                <!-- Card 2: GitHub -->
+                <a href="https://github.com/novartus" target="_blank" rel="noopener noreferrer"
+                  class="contact-channel-card contact-github">
+                  <div class="channel-arrow">↗</div>
+                  <div class="channel-icon-circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </div>
+                  <span class="channel-label">Open Source</span>
+                  <h3>GitHub</h3>
+                  <span class="channel-handle">github.com/novartus</span>
+                </a>
+
+                <!-- Card 3: Location & Status -->
+                <div class="contact-channel-card contact-meta-card">
+                  <div class="channel-icon-circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <span class="channel-label">Current Base</span>
+                  <h3>Toronto, ON</h3>
+                  <span class="channel-handle">Open to Connect</span>
+                </div>
+
+              </div>
+
+              <div class="contact-cta-wrapper">
+                <a href="https://www.linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer"
+                  class="contact-cta-button">
+                  <span>Say Hello</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- App Mini Footer -->
+        <footer class="app-mini-footer">
+          <div class="view-container mini-footer-content">
+            <p>&copy; <span id="copyright-year">2024</span> Abhee Hudani</p>
+            <div class="mini-footer-socials">
+              <a href="https://linkedin.com/in/hudaniabhee" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/novartus" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ODIN-EYE ARCHITECTURAL DOSSIER MODAL
+       ======================================================================== -->
+  <dialog id="odineye-dialog" class="project-modal" aria-labelledby="modal-odineye-title">
+    <div class="modal-header">
+      <div class="modal-header-info">
+        <span class="modal-eyebrow">Flagship Android Architecture</span>
+        <h2 id="modal-odineye-title">Odin-Eye</h2>
+        <p class="modal-header-subtitle">Centralized Personal Health Hub for Android &bull; 100% On-Device AI</p>
       </div>
+      <button class="modal-close-btn" id="close-odineye-modal" aria-label="Close dialog">&times;</button>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; <span id="copyright-year">2024</span> Abhee Hudani. All rights reserved.</p>
+
+    <div class="modal-body">
+      <!-- Section: Executive Overview -->
+      <section class="modal-section">
+        <p class="modal-lead-text">
+          <strong>OdinEye</strong> is a centralized personal health hub for Android. It aggregates live biometrics from multiple wearables and Android Health Connect, tracks your medication routine with real-time reminders, analyzes muscle recovery and body composition, and delivers on-device AI coaching — all without sending your health data to the cloud.
+        </p>
+
+        <div class="modal-key-stats-row">
+          <div class="modal-key-stat">
+            <span class="stat-badge">🔒 100% On-Device</span>
+            <span class="stat-text">Zero cloud telemetry, AES-256 encrypted security vault</span>
+          </div>
+          <div class="modal-key-stat">
+            <span class="stat-badge">⚡ Android AICore</span>
+            <span class="stat-text">Local Gemini Nano coach with native speech pipeline</span>
+          </div>
+          <div class="modal-key-stat">
+            <span class="stat-badge">⌚ Health Connect</span>
+            <span class="stat-text">Multi-wearable biometrics &amp; sleep telemetry aggregation</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Tab Architecture -->
+      <section class="modal-section">
+        <h3 class="modal-section-heading">Tab Architecture &bull; What It Does</h3>
+        <div class="modal-tabs-grid">
+          <div class="modal-tab-item">
+            <div class="tab-badge">Home</div>
+            <p>Live metric cards (steps, calories, heart rate, recovery score), Sleep Architecture &amp; 7-Day Debt Balance card, wellness snapshot, today's medication preview, today's zen preview, AI daily insight.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">Meds</div>
+            <p>Medication routine tracker with week/month calendar view, dose logging, and OS-level push notifications.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">Vitals</div>
+            <p>Health overview — Activity / Sleep / Recovery pillar breakdown, cardio stats, 7-day sleep duration chart, strength telemetry.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">Body</div>
+            <p>Per-muscle-group recovery analysis, hypertrophy readiness, Interactive Guided Mobility &amp; Stretching Timer for Fatigued Muscles, body composition (toggleable in Config).</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">Zen</div>
+            <p>Mindfulness &amp; breathwork sanctuary with Tactile Haptic Pacing (eyes-closed meditation), Ambient Binaural Audio Engine (432Hz, 40Hz Gamma, Brown noise), Dynamic Reactive Mood Face, and 7-day streak calendar.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">AI</div>
+            <p>On-device AI health coach via Android AICore (Gemini Nano) with Voice-Activated Hands-Free Coach, live streaming transcription, and Gemini Cloud API fallback.</p>
+          </div>
+          <div class="modal-tab-item">
+            <div class="tab-badge">Config</div>
+            <p>Module toggles, wearable credentials, daily targets, Android Home Screen AppWidgets hub, AES-256 encrypted security vault.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Key Engineering Highlights -->
+      <section class="modal-section">
+        <h3 class="modal-section-heading">Key Highlights &amp; Engineering Innovations</h3>
+        <div class="modal-highlights-stack">
+
+          <!-- Highlight 1 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🎙️</span>
+              <h4>Voice-Activated Local AI Coach &amp; Interactive Transcribe</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>On-Device Voice Pipeline (<code>OdinEyeVoiceModule</code>):</strong> Hands-free speech interaction utilizing Android's native <code>SpeechRecognizer</code> and <code>TextToSpeech</code> (TTS) — 100% offline, zero cloud transmission.</li>
+              <li><strong>Interactive Transcribe Card:</strong> Real-time streaming voice transcription into an editable <code>TextInput</code>, allowing hands-free speaking, tap-to-correct editing, manual typing, or 1-tap suggested query selection.</li>
+              <li><strong>Audio Equalizer &amp; Native Animations:</strong> 5-bar live equalizer animating dynamically with 100% Native Driver (<code>useNativeDriver: true</code>) without JS bridge overhead.</li>
+              <li><strong>Audio Read-Aloud:</strong> Optional toggle to speak AI responses out loud automatically using on-device neural TTS.</li>
+              <li><strong>Dual-Mode Compatibility:</strong> Runs full offline native speech in compiled Android builds (<code>npm run android</code>), and seamlessly supports mobile keyboard dictation (Google / Samsung Voice Typing) in Expo Go.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 2 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🧘</span>
+              <h4>Interactive Guided Mobility &amp; Stretching Timer</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>De-Fatigue Composite Routine:</strong> Analyzes real-time fatigue scores across 10 muscle groups (Quads, Hamstrings, Chest, Lats/Back, Shoulders, Calves, Glutes, Forearms, Abs, Lower Back) and dynamically sequences targeted restorative stretches.</li>
+              <li><strong>Full-Screen Circular Timer:</strong> Visual phase countdown ring with intelligent intervals (Prepare 5s &rarr; Stretch 30–45s &rarr; Switch Side 5s &rarr; Next Exercise).</li>
+              <li><strong>Tactile Transitions &amp; Ambient Delta Waves:</strong> Gentle haptic pulses on phase changes and integrated 2Hz Delta restorative frequency soundscapes.</li>
+              <li><strong>Omnipresent Access:</strong> Launch from the top banner in Body Analysis, individual muscle group dossier cards, or directly via one-tap action pills in AI Coach recommendations.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 3 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🌙</span>
+              <h4>Sleep Debt &amp; Sleep Architecture Balance</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>7-Day Cumulative Sleep Debt:</strong> Computes personal sleep debt against your biological baseline (default 8.0h/night) with a strict zero-dummy data guarantee (calculated solely against recorded nights).</li>
+              <li><strong>Physical Restoration (Deep Sleep):</strong> Tracks slow-wave delta sleep against the clinical 15%–25% target for cellular turnover and human growth hormone release.</li>
+              <li><strong>Cognitive Resilience (REM Sleep):</strong> Tracks paradoxical REM sleep against the clinical 20%–25% target for emotional memory consolidation and synaptic pruning.</li>
+              <li><strong>Scandinavian Bento Card:</strong> Full-width spacious bento layout with target range indicator brackets, status badges (Optimal, Sub-optimal, Abundant), and somatic bedtime coaching advice.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 4 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">📳</span>
+              <h4>Tactile Haptic Pacing &amp; Navigation Feedback</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>Somatic Eyes-Closed Meditation:</strong> Inhale (rising double micro-pulse), Hold (subtle anchor tap), and Exhale (smooth soothing release) vibration cues so you can meditate with closed eyes.</li>
+              <li><strong>In-Chamber Toggle:</strong> Instant 📳 Haptics: ON / OFF toggle pill in the full-screen breathing chamber header with persistent storage.</li>
+              <li><strong>Crisp Navigation Haptics:</strong> Responsive micro-vibrations (28ms) on bottom tab bar presses (<code>FloatingTabBar</code>) and programmatic in-app card jump links.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 5 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">📱</span>
+              <h4>Android Home Screen AppWidgets (RemoteViews)</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>Pill Reminder 4&times;2 Widget:</strong> Displays the next scheduled dose with a direct "Take" action button right on the Android home screen without opening the app, updating live adherence.</li>
+              <li><strong>Zen Streak &amp; Vitals 4&times;2 Widget:</strong> Displays daily steps with progress bar, real-time/resting heart rate, current mindfulness streak, and a one-tap "Breathe" launcher.</li>
+              <li><strong>Widget Hub in Settings:</strong> Live visual preview, step-by-step setup guide, and manual instant sync.</li>
+            </ul>
+          </article>
+
+          <!-- Highlight 6 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">🎧</span>
+              <h4>Procedural Ambient Audio &amp; Binaural Beats Engine</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li><strong>Background Sound Engine (<code>OdinAudioEngine</code>):</strong> Real-time mathematical sound synthesis running on a dedicated thread via native Android <code>AudioTrack</code> (44.1 kHz 16-bit stereo PCM) that plays continuously with the screen dimmed.</li>
+              <li><strong>14 Bespoke Soundscapes:</strong>
+                <div class="sub-bullets">
+                  <span><strong>Binaural Beats:</strong> 40Hz Gamma (focus), 10Hz Alpha (flow), 6Hz Theta (meditation), 2Hz Delta (restoration).</span>
+                  <span><strong>Solfeggio Frequencies:</strong> 432Hz Harmonic Peace, 528Hz Cellular Transformation, 639Hz Compassion.</span>
+                  <span><strong>Colored Noise:</strong> Velvet Brown Noise (1/f&sup2; Brownian walk), Organic Pink Noise, Tranquil White Noise.</span>
+                  <span><strong>Procedural Nature:</strong> Resonant ocean waves with LFO modulation, gentle rain, forest breeze, chirping birds.</span>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Highlight 7 -->
+          <article class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-icon">😊</span>
+              <h4>Reactive Dynamic Mood Face</h4>
+            </div>
+            <ul class="highlight-bullets">
+              <li>Morphing vector SVG face (<code>MoodFaceIcon</code>) across 5 emotional states (Unhappy, Sad, Normal, Good, Happy) paired with reactive pastel concentric ripple auras, spring bounce physics, and persistent daily state.</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
     </div>
-  </footer>
+  </dialog>
 
   <script src="js/script.js"></script>
 </body>
