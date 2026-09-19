@@ -7,6 +7,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fhudaniabhee-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/hudaniabhee)
 [![GitHub](https://img.shields.io/badge/GitHub-novartus-181717?style=flat-square&logo=github)](https://github.com/novartus)
 [![HackerRank](https://img.shields.io/badge/HackerRank-Novartus-2EC866?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/profile/Novartus)
+[![Credly](https://img.shields.io/badge/Credly-Certifications-FF6B00?style=flat-square&logo=credly&logoColor=white)](https://www.credly.com/users/9f4fb15e-081b-4c85-a445-fd6a66c3c311)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 Personal engineering portfolio showcasing enterprise architecture, open-source projects, and technical leadership. Built with high craft, zero framework bloat, and pure web standards.
@@ -59,4 +60,5 @@ npx serve .
 - **LinkedIn:** [linkedin.com/in/hudaniabhee](https://linkedin.com/in/hudaniabhee)
 - **GitHub:** [@novartus](https://github.com/novartus)
 - **HackerRank:** [hackerrank.com/profile/Novartus](https://www.hackerrank.com/profile/Novartus)
+- **Credly:** [credly.com/users/9f4fb15e-081b-4c85-a445-fd6a66c3c311](https://www.credly.com/users/9f4fb15e-081b-4c85-a445-fd6a66c3c311)
 - **Base:** Toronto, ON, Canada

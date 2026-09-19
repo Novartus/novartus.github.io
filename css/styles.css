@@ -1333,6 +1333,12 @@ html, body {
   border: 1px solid rgba(133, 128, 225, 0.2);
 }
 
+.highlight-chip.chip-award {
+  background: rgba(229, 192, 123, 0.12);
+  color: #e5c07b;
+  border-color: rgba(229, 192, 123, 0.35);
+}
+
 .milestone-bullets {
   list-style: none;
   padding: 0;
@@ -2171,7 +2177,7 @@ a.contact-channel-card:hover .channel-icon-circle {
   .mobile-header-actions {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
+    gap: 0.45rem;
   }
 
   /* Hide duplicate desktop eyebrow controls on mobile since they are inside the mobile header */
