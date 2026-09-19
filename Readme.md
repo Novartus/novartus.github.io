@@ -6,6 +6,7 @@
 [![Live Website](https://img.shields.io/badge/Website-novartus.github.io-8580E1?style=flat-square&logo=googlechrome&logoColor=white)](https://novartus.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fhudaniabhee-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/hudaniabhee)
 [![GitHub](https://img.shields.io/badge/GitHub-novartus-181717?style=flat-square&logo=github)](https://github.com/novartus)
+[![HackerRank](https://img.shields.io/badge/HackerRank-Novartus-2EC866?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/profile/Novartus)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 Personal engineering portfolio showcasing enterprise architecture, open-source projects, and technical leadership. Built with high craft, zero framework bloat, and pure web standards.
@@ -57,4 +58,5 @@ npx serve .
 - **Portfolio:** [novartus.github.io](https://novartus.github.io/)
 - **LinkedIn:** [linkedin.com/in/hudaniabhee](https://linkedin.com/in/hudaniabhee)
 - **GitHub:** [@novartus](https://github.com/novartus)
+- **HackerRank:** [hackerrank.com/profile/Novartus](https://www.hackerrank.com/profile/Novartus)
 - **Base:** Toronto, ON, Canada
