@@ -35,7 +35,7 @@ Personal engineering portfolio showcasing enterprise architecture, open-source p
 
 - **Languages:** TypeScript, JavaScript, Python, Java, C++, SQL
 - **Frontend & UI:** React 19, Next.js, Electron, Tailwind CSS v4, TradingView, D3.js, Three.js, WebSockets, Web Workers
-- **Backend & Cloud:** Node.js, NestJS, Express, Spring Boot, OpenShift (OCP), Docker, Kubernetes, GitHub Actions
+- **Backend & Cloud:** Node.js, NestJS, Express, Spring Boot, OpenShift (OCP), Docker, Kubernetes, Jenkins, GitHub Actions
 
 ---
 
