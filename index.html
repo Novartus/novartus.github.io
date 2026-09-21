@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhee Hudani | Senior Full Stack Developer &amp; Cloud Architect</title>
+  <title>Abhee Hudani | Senior Full Stack Developer</title>
   <meta name="description"
     content="Senior Full Stack Developer at RBC specializing in TypeScript/JavaScript, Python &amp; Java, building resilient architectures with React, NestJS, Node.js, and GenAI.">
   <meta name="keywords"
-    content="Abhee Hudani, Senior Full Stack Developer, RBC, JavaScript, TypeScript, Python, Java, React, NestJS, Node.js, Next.js, React Native, Expo, Spring Boot, AWS, OCP, GenAI, Portfolio">
+    content="Abhee Hudani, Senior Full Stack Developer, RBC, JavaScript, TypeScript, Python, Java, React, NestJS, Node.js, Next.js, Jenkins, Docker, Kubernetes, OpenShift, OCP, CI/CD, DevOps, AWS, Spring Boot, GenAI, Portfolio">
   <meta name="author" content="Abhee Hudani">
   <meta name="theme-color" content="#eaebf0">
 
@@ -37,7 +37,7 @@
   <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
   <meta property="og:site_name" content="Abhee Hudani Portfolio">
   <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Abhee Hudani | Senior Full Stack Developer &amp; Cloud Architect">
+  <meta property="og:title" content="Abhee Hudani | Senior Full Stack Developer">
   <meta property="og:description"
     content="Senior Full Stack Developer at RBC specializing in TypeScript/JavaScript, Python &amp; Java. Expert in React, NestJS, Node.js, distributed systems, and GenAI.">
   <meta property="og:type" content="website">
@@ -53,13 +53,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="novartus.github.io">
   <meta property="twitter:url" content="https://novartus.github.io/">
-  <meta name="twitter:title" content="Abhee Hudani | Senior Full Stack Developer &amp; Cloud Architect">
+  <meta name="twitter:title" content="Abhee Hudani | Senior Full Stack Developer">
   <meta name="twitter:description"
     content="Senior Full Stack Developer at RBC specializing in TypeScript/JavaScript, Python &amp; Java. Expert in React, NestJS, Node.js, distributed systems, and GenAI.">
   <meta name="twitter:image" content="https://novartus.github.io/static/og.png">
   <meta name="twitter:image:alt" content="Abhee Hudani - Senior Full Stack Developer Portfolio">
 
-  <!-- Stylesheet -->
+  <!-- Stylesheet & Resource Preloads -->
+  <link rel="preload" as="style" href="css/styles.css">
+  <link rel="preload" as="script" href="js/script.js">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Structured Data (JSON-LD Schemas) -->
@@ -76,10 +78,21 @@
         "image": "https://novartus.github.io/static/og.png",
         "jobTitle": "Senior Full Stack Developer",
         "description": "Senior Full Stack Developer at RBC specializing in TypeScript/JavaScript, Python & Java, building resilient architectures with React, NestJS, Node.js, and GenAI.",
+        "award": [
+          "RBC Quarterly Performance Award (2026)"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Credly Verified Badges & Technical Certifications",
+            "url": "https://www.credly.com/users/9f4fb15e-081b-4c85-a445-fd6a66c3c311"
+          }
+        ],
         "worksFor": {
           "@type": "Organization",
           "name": "Royal Bank of Canada",
-          "url": "https://www.rbc.com"
+          "url": "https://www.rbc.com",
+          "sameAs": "https://en.wikipedia.org/wiki/Royal_Bank_of_Canada"
         },
         "alumniOf": {
           "@type": "CollegeOrUniversity",
@@ -110,10 +123,13 @@
           "Spring Boot",
           "Flask",
           "AWS",
-          "OCP",
+          "OpenShift (OCP)",
           "Docker",
           "Kubernetes",
           "Jenkins",
+          "GitHub Actions",
+          "CI/CD",
+          "DevOps",
           "GenAI",
           "Gemini Nano",
           "MySQL",
@@ -137,6 +153,7 @@
         "@id": "https://novartus.github.io/#website",
         "name": "Abhee Hudani | Senior Full Stack Developer",
         "url": "https://novartus.github.io",
+        "inLanguage": "en-US",
         "description": "Portfolio of Abhee Hudani, Senior Full Stack Developer at RBC specializing in scalable enterprise platforms, cloud architecture, and on-device AI.",
         "publisher": {
           "@id": "https://novartus.github.io/#person"
@@ -148,45 +165,12 @@
         "@id": "https://novartus.github.io/#profilepage",
         "url": "https://novartus.github.io",
         "name": "Abhee Hudani - Portfolio",
+        "inLanguage": "en-US",
+        "dateCreated": "2024-01-01",
+        "dateModified": "2026-09-21",
         "mainEntity": {
           "@id": "https://novartus.github.io/#person"
         }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "About",
-            "item": "https://novartus.github.io/#about"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Skills",
-            "item": "https://novartus.github.io/#skills"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Experience",
-            "item": "https://novartus.github.io/#experience"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Projects",
-            "item": "https://novartus.github.io/#projects"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Contact",
-            "item": "https://novartus.github.io/#contact"
-          }
-        ]
       },
       {
         "@context": "https://schema.org",
@@ -590,7 +574,7 @@
               <div class="about-pillars-grid">
                 <div class="about-pillar-card">
                   <div class="pillar-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                       <polyline points="2 17 12 22 22 17"></polyline>
@@ -608,7 +592,7 @@
 
                 <div class="about-pillar-card">
                   <div class="pillar-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                     </svg>
@@ -625,7 +609,7 @@
 
                 <div class="about-pillar-card">
                   <div class="pillar-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path
                         d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
@@ -643,7 +627,7 @@
 
                 <div class="about-pillar-card">
                   <div class="pillar-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                       <circle cx="9" cy="7" r="4"></circle>
@@ -684,7 +668,7 @@
               <div class="skill-bento-card skill-card-frontend">
                 <div class="skill-card-top">
                   <div class="skill-icon-circle icon-frontend">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                       <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -712,7 +696,7 @@
               <div class="skill-bento-card skill-card-backend">
                 <div class="skill-card-top">
                   <div class="skill-icon-circle icon-backend">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
                       <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
@@ -745,7 +729,7 @@
               <div class="skill-bento-card skill-card-devops">
                 <div class="skill-card-top">
                   <div class="skill-icon-circle icon-devops">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                     </svg>
@@ -1712,7 +1696,7 @@
     </div>
   </dialog>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>

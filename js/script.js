@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const viewMeta = {
     'view-about': {
-      title: 'Abhee Hudani | Senior Full Stack Developer & Cloud Architect',
+      title: 'Abhee Hudani | Senior Full Stack Developer',
       desc: 'Senior Full Stack Developer at RBC specializing in TypeScript/JavaScript, Python & Java, building resilient architectures with React, NestJS, Node.js, and GenAI.'
     },
     'view-skills': {
