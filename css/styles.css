@@ -1662,6 +1662,57 @@ a.titlebar-url:hover {
   transform: translateX(3px);
 }
 
+/* Projects Bottom CTA - View All Repositories */
+.projects-cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.view-all-projects-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2.25rem;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--card-hover);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.view-all-projects-btn:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background: var(--card-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -5px var(--accent-glow);
+}
+
+.view-all-projects-btn svg {
+  color: var(--accent-color);
+  transition: transform 0.25s ease;
+}
+
+.view-all-projects-btn:hover svg {
+  transform: scale(1.1);
+}
+
+.view-all-projects-btn .btn-arrow {
+  font-size: 1.15rem;
+  transition: transform 0.25s ease;
+  line-height: 1;
+}
+
+.view-all-projects-btn:hover .btn-arrow {
+  transform: translate(3px, -3px);
+}
+
 /* ==========================================================================
    ODIN-EYE ARCHITECTURAL DOSSIER MODAL
    ========================================================================== */
