@@ -27,7 +27,7 @@ Personal engineering portfolio showcasing enterprise architecture, open-source p
 
 - **[Hermex Terminal](https://hermex-terminal.netlify.app/):** Institutional-grade, zero-backend HFT & statistical market analytics terminal running 100% client-side. Sub-100ms L2 order book matching, Kyle's Lambda slippage, Hawkes processes, and multithreaded Web Worker quant crunching (React 19, TypeScript 5.8, Tailwind CSS v4, TradingView, D3.js, Three.js).
 - **[Odin-Eye](https://odin-eye.netlify.app/):** Centralized personal health hub for Android aggregating live biometrics via Android Health Connect, real-time medication tracking, and on-device AI coaching with zero-cloud privacy.
-- **[KyberFlow](https://kyberflow.netlify.app/):** Autonomous AI developer agent orchestration platform built with TypeScript, Python, FastAPI, and WebSockets.
+- **[RustiCache](https://github.com/novartus/RustiCache):** High-performance, Redis-compatible in-memory datastore and replication engine implemented in Rust with Tokio async runtime. Zero-copy RESP2/RESP3 parser, active TTL eviction, sharded concurrency, and master-replica TCP synchronization.
 
 ---
 

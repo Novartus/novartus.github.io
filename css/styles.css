@@ -385,6 +385,62 @@ html, body {
   background: var(--card-bg);
 }
 
+/* Resume Download Buttons */
+.eyebrow-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  height: 36px;
+  padding: 0 0.95rem;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--card-hover);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.eyebrow-resume-btn:hover {
+  color: #ffffff;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -4px var(--accent-glow);
+}
+
+.eyebrow-resume-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.eyebrow-resume-btn:hover svg {
+  transform: translateY(1px);
+}
+
+.mobile-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: 32px;
+  padding: 0 0.75rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--card-hover);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mobile-resume-btn:hover {
+  color: #ffffff;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* ==========================================================================
    VIEW 1: ABOUT / OVERVIEW (EXACT REFERENCE GEOMETRY)
    ========================================================================== */
@@ -2033,14 +2089,18 @@ a.contact-channel-card:hover .channel-icon-circle {
 }
 
 .contact-cta-wrapper {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .contact-cta-button {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1.15rem 2.85rem;
+  padding: 1.15rem 2.5rem;
   font-size: 1.05rem;
   font-weight: 700;
   color: #ffffff;
@@ -2049,6 +2109,7 @@ a.contact-channel-card:hover .channel-icon-circle {
   text-decoration: none;
   box-shadow: 0 10px 25px -5px var(--accent-glow);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
 }
 
 .contact-cta-button:hover {
@@ -2056,6 +2117,20 @@ a.contact-channel-card:hover .channel-icon-circle {
   background: var(--accent-secondary);
   box-shadow: 0 16px 32px -5px var(--accent-glow);
   color: #ffffff;
+}
+
+.contact-resume-button {
+  background: var(--card-hover);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.contact-resume-button:hover {
+  background: var(--card-bg);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: 0 12px 28px -5px var(--accent-glow);
 }
 
 /* ==========================================================================
